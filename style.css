@@ -1,3 +1,16 @@
+.top_pruh_in{
+    max-width: 1220px;
+    padding-right: 20px;
+    padding-left: 20px;
+    width: 100%;
+    margin: 0 auto;
+}
+@media screen and (max-width: 991px){
+    .top_pruh_in{
+        display: none;
+    }
+}
+
 .holder, .holder2 {
     max-width: 1220px;
     position: relative;
@@ -32,8 +45,6 @@
 
 
 
-
-
 .poradna_box{
     z-index: 9999;
 }
@@ -43,6 +54,8 @@
     grid-template-columns: 1fr 1fr 1fr;
     grid-gap: 20px;
     height: auto;
+    padding: 20px 0;
+    width: 100%;
 }
 .box_a_h{
     margin: 0;
@@ -52,17 +65,15 @@
     margin: 0;
     width: auto;
 }
-@media screen and (max-width: 991px){
+@media screen and (max-width: 767px){
     .box_nadpisy_adn{
-        display: grid;
-        grid-template-columns: 1fr 1fr 1fr;
+        grid-template-columns: 1fr;
         grid-gap: 20px;
-        height: auto;
     }
 }
 
 .boxy_produkty_uvodka{
-    display: grid;
+    display: grid !important;
     grid-template-columns: 1fr 1fr 1fr;
     grid-gap: 20px;
 }
@@ -78,7 +89,9 @@
     outline: solid 1px #dedede;
     cursor: pointer;
 }
-
+.nahledy_produktu_foto_obal img{
+    width: auto !important;
+}
 
 @media screen and (max-width: 991px){
     .boxy_produkty_uvodka{
