@@ -1,0 +1,87 @@
+.holder, .holder2 {
+    max-width: 1220px;
+    position: relative;
+    z-index: 9000;
+    min-height: 10px;
+    text-align: left;
+    line-height: 130%;
+    padding-right: 20px;
+    padding-left: 20px;
+    width: 100%;
+    margin: 0 auto;
+}
+.clear{
+    display: none !important;
+}
+
+
+
+
+.top_menu_kat_obr_obal {
+    width: auto;
+    height: 521px;
+    margin-top: 0px;
+    background-color: #ffffff;
+    border-bottom: solid 1px #dedede;
+    background-image: url(../img/slider-img2.jpg);
+    background-position: center top;
+    background-repeat: no-repeat;
+}
+
+
+
+
+
+
+
+.poradna_box{
+    z-index: 9999;
+}
+
+.box_nadpisy_adn{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-gap: 20px;
+    height: auto;
+}
+.box_a_h{
+    margin: 0;
+    width: auto;
+}
+.box_a{
+    margin: 0;
+    width: auto;
+}
+@media screen and (max-width: 991px){
+    .box_nadpisy_adn{
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-gap: 20px;
+        height: auto;
+    }
+}
+
+.boxy_produkty_uvodka{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-gap: 20px;
+}
+.nahledy_produktu {
+    float: none;
+    width: auto;
+    height: auto;
+    margin-right: 0;
+    margin-bottom: 0;
+    padding: 20px;
+    background-color: #ffffff;
+    border: none;
+    outline: solid 1px #dedede;
+    cursor: pointer;
+}
+
+
+@media screen and (max-width: 991px){
+    .boxy_produkty_uvodka{
+        grid-template-columns: 1fr 1fr;
+    }
+}
