@@ -1592,7 +1592,7 @@ function detail_produtku($id_p)
 	// fotky		
 	
 		
-    $ret_pr .= '<div class="detail_foto">';
+    $ret_pr .= '<div class="detail-produktu"><div class="detail_foto">';
     
      if($cena_s_dph >= __PAB_2__){$ret_pr .= '<img src="/img/dz.png" alt="doprava zdarma" title="doprava zdarma" style="position: absolute; z-index: 5; margin-top: 20px; margin-left: 20px;"   />';}
      elseif($row_n->akce==1){$ret_pr .= '<img src="/img/akce.png" alt="akce" title="akce" style="position: absolute; z-index: 5; margin-top: 20px; margin-left: 20px;"   />';}
@@ -1739,7 +1739,7 @@ if($cena_s_dph >= 3000)
 	 // konec cerna
 	 $ret_pr .= '</div>';
 	 // konec pravy
-	 $ret_pr .= '</div>';
+	 $ret_pr .= '</div></div>';
 	 
 
 	  	

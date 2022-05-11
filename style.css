@@ -58,7 +58,20 @@ img{
 
 
 
+.top_pruh2_vyhl, .top_pruh2_kosik, .top_pruh2_prihlas {
+    line-height: 60px;
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    position: relative;
+}
 
+.top_kosik_pocet {
+    position: absolute;
+    margin: 0;
+    top: 29px;
+    right: 41px;
+}
 
 .poradna_box{
     z-index: 9999;
@@ -101,8 +114,7 @@ img{
     margin-bottom: 0;
     padding: 20px;
     background-color: #ffffff;
-    border: none;
-    outline: solid 1px #dedede;
+    border: solid 1px #dedede;
     cursor: pointer;
     position: relative;
 }
@@ -144,6 +156,13 @@ img{
     }
 }
 
+.drobinka {
+    height: 60px;
+    line-height: 60px;
+}
+.drobinka a{
+
+}
 
 .aktuality_box_in {
     float: none;
@@ -168,12 +187,15 @@ img{
     height: 100px;
     background-color: #f5f5f5;
     font-size: 16px;
-    border: 0;
-    outline: solid 1px #dedede;
+    border: solid 1px #dedede;
     margin-right: 0px;
 }
 
-
+.detail-produktu{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 20px;
+}
 .detail_foto{
     float: none;
     width: 50%;
