@@ -81,7 +81,7 @@ img{
 
 .box_nadpisy_adn{
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-columns: 1fr 1fr;
     grid-gap: 20px;
     height: auto;
     padding: 20px 0;
@@ -142,7 +142,7 @@ img{
     font-size: 22px;
     font-weight: 500;
     overflow: hidden;
-    padding-top: 20px;
+    margin: 20px 0;
 }
 .nahledy_produktu_ceny {
     width: auto;
@@ -150,6 +150,10 @@ img{
     justify-content: space-between;
     height: auto;
     margin-bottom: 20px;
+}
+.nahledy_produktu_cena{
+    display: flex;
+    align-items: center;
 }
 
 @media screen and (max-width: 991px){
