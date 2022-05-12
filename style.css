@@ -195,17 +195,23 @@ img{
     display: grid;
     grid-template-columns: 1fr 1fr;
     grid-gap: 20px;
+    margin-bottom: 20px;
 }
 .detail_foto{
     float: none;
-    width: 50%;
-    margin-bottom: 20px;
+    width: 100%;
 }
 
 .detail_box_pravy_obal {
     float: none;
-    width: 50%;
-    margin-bottom: 20px;
+    width: 100%;
+}
+@media screen and (max-width: 991px){
+    .detail-produktu{
+        grid-template-columns: 1fr;
+        grid-gap: 20px;
+        margin-bottom: 20px;
+    }
 }
 
 .ps_top{
@@ -230,4 +236,20 @@ img{
 }
 .inp_s1{
     margin-left: 20px;
+}
+
+.aktuality_foot_nadpis2{
+    margin: 20px 0;
+}
+.product-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-gap: 20px;
+    margin-bottom: 20px;
+}
+@media screen and (max-width: 991px){
+    .product-grid {
+        grid-template-columns: 1fr 1fr;
+        grid-gap: 10px;
+    }
 }
