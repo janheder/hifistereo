@@ -2180,7 +2180,7 @@ function kategorie_produktu()
 	
 	
 		$ret_kat .= '<div class="clear" style="height: 20px;"></div>
-		<div class="aktuality_foot_nadpis">NEJPRODÁVANĚJŠÍ ZBOŽÍ</div>
+		<div class="aktuality_foot_nadpis heading-bestseller">NEJPRODÁVANĚJŠÍ ZBOŽÍ</div>
 		<div class="cara2"></div>
 		<div class="clear" style="height: 20px;"></div>';
 	
@@ -2337,7 +2337,7 @@ function kategorie_produktu()
 
 	
 
-	$ret_kat .= '<div class="clear" style="height: 20px;"></div>';
+	$ret_kat .= '<div class="clear" style="height: 20px;"></div><div class="product-grid">';
 	
 	
 	
@@ -2436,7 +2436,7 @@ function kategorie_produktu()
 	  }
 	  
 	  	 	// strankovani
-	$ret_kat .= '<div class="clear" style="height: 15px;"></div>';
+	$ret_kat .= '</div><div class="clear" style="height: 15px;"></div>';
 	$ret_kat .= '<div class="strankovani_kategorie">';
 	$ret_kat .= get_links3a($pocet,$limit);
 	$ret_kat .= '</div>';
