@@ -2124,7 +2124,7 @@ function kategorie_produktu()
 	}
 	
 	
-	$ret_kat .= '<div class="clear" style="height: 20px;"></div>';
+	$ret_kat .= '<div class="clear" style="height: 20px;"></div><div class="submenu-wrap">';
 	
 	
 	// zobrazime tlacitka podkategorii
@@ -2174,7 +2174,7 @@ function kategorie_produktu()
 	
 	
 	// ukoncime hlavni obal
-	$ret_kat .= '<div class="clear"></div>';
+	$ret_kat .= '</div><div class="clear"></div>';
 	$ret_kat .= '</div>';
 	$ret_kat .= '<div class="holder4">';
 	
