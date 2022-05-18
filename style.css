@@ -49,16 +49,50 @@ img{
 
 .top_menu_kat_obr_obal {
     width: auto;
-    height: 521px;
+    height: 520px;
     margin-top: 0px;
     background-color: #ffffff;
     border-bottom: solid 1px #dedede;
-    background-image: url(../img/slider-img2.jpg);
+    background-image: url("https://www.hifistereo.cz/img/slider-img2.jpg");
     background-position: center top;
     background-repeat: no-repeat;
 }
+.top_menu_slider {
+    width: auto;
+    height: 100%;
+    margin: 0px;
+    padding: 0px;
+}
+.bx-wrapper .bx-viewport{
+    height: 520px !important;
+}
+ul.bxslider {
+    width: auto;
+    height: 100%;
+    margin-top: 0px;
+    padding: 0px;
+    overflow: hidden;
+    background-color: transparent;
+}
+ul.bxslider > li{
+    height: 100% !important;
+}
+.slider_uvodka_box{
+    height: 100%;
+    background-position: center left !important;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-end;
+    padding-left: 50%;
+}
 
-
+.bx-wrapper .bx-pager, .bx-wrapper .bx-controls-auto{
+    bottom: 20px;
+}
+.slider_uvodka_box_nadpis{
+    margin-top: 0;
+}
 
 .top_pruh2_vyhl, .top_pruh2_kosik, .top_pruh2_prihlas {
     line-height: 60px;
@@ -160,7 +194,7 @@ img{
     line-height: 1.5;
     align-items: center;
 }
-}
+
 .nahledy_produktu_nazev {
     width: auto;
     height: 54px;
