@@ -27,7 +27,7 @@ img{
     }
 }
 
-.holder, .holder2, .holder3, .holder4 {
+.holder, .holder3, .holder4 {
     max-width: 1220px;
     position: relative;
     z-index: 9000;
@@ -41,11 +41,19 @@ img{
     background: transparent;
     border: 0;
 }
+.holder2{
+    max-width: 1180px;
+    background: #fff;
+    border: solid 1px #dedede;
+    padding: 20px;
+    margin-top: 40px
+}
+
 .clear{
     display: flex !important;
     height: 0 !important;
 }
-.product-grid .clear{
+.product-grid .clear, .boxy_produkty_uvodka .clear{
     display: none !important;
 }
 
@@ -109,13 +117,13 @@ ul.bxslider > li{
     position: relative;
 }
 
-.top_pruh2_vyhl{
+.top_pruh2_vyhl, .top_pruh2_vyhl_h{
     order: 10;
 }
-.top_pruh2_kosik{
+.top_pruh2_kosik, .top_pruh2_kosik_h{
     order: 20;
 }
-.top_pruh2_prihlas{
+.top_pruh2_prihlas, .top_pruh2_prihlas_h{
     order: 15;
 }
 .top_kosik_pocet {
@@ -156,7 +164,7 @@ ul.bxslider > li{
     display: grid !important;
     grid-template-columns: 1fr 1fr 1fr;
     grid-gap: 20px;
-    margin-bottom: 20px;
+    margin-bottom: 60px;
 }
 .nahledy_produktu {
     float: none;
@@ -207,14 +215,13 @@ ul.bxslider > li{
     padding: 20px;
     overflow: hidden;
     z-index: 99;
-    display: block;
     line-height: 1.5;
-    align-items: center;
+    display: none;
 }
 
 .nahledy_produktu_nazev {
     width: auto;
-    height: 54px;
+    height: 42px;
     font-size: 22px;
     font-weight: 500;
     overflow: hidden;
@@ -375,7 +382,9 @@ span.p_nadpisy{
 .inp_s1{
     margin-left: 20px;
 }
-
+.aktuality_foot_archiv + .clear{
+    height: 40px !important;
+  }
 .aktuality_foot_nadpis2{
     margin: 20px 0;
 }
