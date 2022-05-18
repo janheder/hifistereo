@@ -42,7 +42,8 @@ img{
     border: 0;
 }
 .clear{
-    display: none !important;
+    display: flex !important;
+    height: 0 !important;
 }
 
 .obal_bily {
@@ -281,6 +282,7 @@ ul.bxslider > li{
 }
 .pata_obal{
     height: auto;
+    background-position: center bottom -30px;
 }
 .pata_box1, .pata_box2{
     height: auto;
@@ -551,3 +553,22 @@ span.p_nadpisy{
     width: 100%;
     display: flex;
 }
+
+.det_box_sklad{
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .detail_box_pravy_obal_cerny{
+    padding: 40px 20px;
+  }
+
+  .ak_uvod_foto{
+    float: none;
+    flex-shrink: 0;
+  }
+  .ak_uvod_nadpis_text{
+    width: 100%;
+    margin: 0;
+    padding-left: 15px;
+  }
