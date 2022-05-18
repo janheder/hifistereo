@@ -54,9 +54,11 @@ img{
     display: flex !important;
     height: 0 !important;
 }
-.product-grid .clear, .boxy_produkty_uvodka .clear{
+.product-grid .clear, .boxy_produkty_uvodka .clear, .box_nadpisy_adn .clear{
     display: none !important;
 }
+
+
 
 .obal_bily {
     padding: 50px 0;
@@ -161,6 +163,19 @@ ul.bxslider > li{
     }
 }
 
+
+.holder4 .box_nadpisy_adn{
+    grid-template-columns: 1fr 1fr;
+}
+@media screen and (max-width: 767px){
+    .holder4 .box_nadpisy_adn{
+        grid-template-columns: 1fr;
+        grid-gap: 0;
+    } 
+    .box_nejprodavanejsi{
+        margin-top: -1px;
+    }
+}
 .boxy_produkty_uvodka{
     display: grid !important;
     grid-template-columns: 1fr 1fr 1fr;
