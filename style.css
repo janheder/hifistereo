@@ -105,6 +105,15 @@ ul.bxslider > li{
     position: relative;
 }
 
+.top_pruh2_vyhl{
+    order: 10;
+}
+.top_pruh2_kosik{
+    order: 20;
+}
+.top_pruh2_prihlas{
+    order: 15;
+}
 .top_kosik_pocet {
     position: absolute;
     margin: 0;
@@ -188,12 +197,13 @@ ul.bxslider > li{
     width: auto;
     right: 0px;
     left: 0px;
+    bottom: 0;
     height: 100%;
     width: 100%;
     padding: 20px;
     overflow: hidden;
     z-index: 99;
-    display: flex;
+    display: block;
     line-height: 1.5;
     align-items: center;
 }
@@ -273,7 +283,7 @@ ul.bxslider > li{
     height: auto;
 }
 .pata_box1, .pata_box2{
-
+    height: auto;
 }
 span.p_nadpisy{
     display: block;
@@ -282,13 +292,15 @@ span.p_nadpisy{
 .pata_odkazy{
     height: auto;
     margin: 0;
-    padding: 60px 0 30px 0;
+    padding: 30px 0;
     display: block;
     width: 100%;
+    margin-top: 60px;
 }
 .nl {
     height: auto;
     margin-bottom: 60px;
+    padding: 30px 0;
 }
 .nl .holder{
     display: flex;
@@ -308,7 +320,7 @@ span.p_nadpisy{
     margin: 0;
 }
 
-.neewsletter_f a{
+#neewsletter_f a{
     padding-top: 10px;
     display: inline-flex;
 }
@@ -499,6 +511,7 @@ span.p_nadpisy{
     margin-left: auto;
     margin-right: auto;
     display: flex;
+    padding: 0 20px;
 }
 .top_pruh2_logo{
     float: none;
