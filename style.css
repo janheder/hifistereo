@@ -46,7 +46,8 @@ img{
     background: #fff;
     border: solid 1px #dedede;
     padding: 20px;
-    margin-top: 40px
+    margin: 40px auto;
+    width: 100%;
 }
 
 .clear{
@@ -416,8 +417,14 @@ span.p_nadpisy{
     margin-right: 0;
     margin-bottom: 0;
     cursor: pointer;
-}
 
+}
+.submenu_kat_box_obr{
+    height: 100%;
+}
+.submenu_kat_box_obr img{
+    max-height: 100%;
+}
 #filtr{
     display: flex;
     flex-direction: column;
@@ -615,4 +622,9 @@ span.p_nadpisy{
   }
   .nahled_obal_dp_nadpis{
     font-size: 22px;
+  }
+
+  .kroky_kosiku{
+    margin-top: 40px;
+    margin-bottom: -40px;
   }

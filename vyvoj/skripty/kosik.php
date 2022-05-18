@@ -40,7 +40,7 @@
 	$obsah_k .= '<div class="clear" style="height: 10px;"></div>';
 	
 	$obsah_k .= '<div style="width: 60%; text-align: center; margin-left: auto; margin-right: auto; height: 80px; line-height: 80px; font-size: 16px; 
-	margin-top: 30px;" >Pro zahájení nákupu vyberte jednu z kategorií<br /></div>';
+	margin-top: 30px;" >Pro zahájení nákupu vyberte jednu z kategorií<br /></div><div class="submenu-wrap">';
 	
 	$query_submenu = MySQL_Query("SELECT id,str,nazev, obr FROM kategorie WHERE vnor=1 AND aktivni=1 ORDER BY razeni,nazev") or die(err(1));
              if(mysql_num_rows($query_submenu))
@@ -60,7 +60,7 @@
 					 $yy++;
 				}
 			  }
-	
+	$obsah_k .= '</div>';
 	}
 
 
