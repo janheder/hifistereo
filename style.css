@@ -45,6 +45,9 @@ img{
     display: flex !important;
     height: 0 !important;
 }
+.product-grid .clear{
+    display: none !important;
+}
 
 .obal_bily {
     padding: 50px 0;
@@ -571,4 +574,32 @@ span.p_nadpisy{
     width: 100%;
     margin: 0;
     padding-left: 15px;
+  }
+
+
+  .nahled_obal_wrap{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-gap: 20px;
+  }
+  .nahled_obal_dp{
+    margin: 0;
+    display: flex;
+    align-items: center;
+    padding: 15px;
+  }
+  .nahled_obal_dp_foto{
+    margin: 0;
+    height: auto;
+      display: flex;
+    align-items: center;
+    flex-shrink: 0;
+  }
+  .nahled_obal_dp_text{
+      margin: 0;
+    width: auto;
+    padding-left: 15px;
+  }
+  .nahled_obal_dp_nadpis{
+    font-size: 22px;
   }

@@ -1140,9 +1140,9 @@ function nahled_produktu($id,$nazev,$cena,$cena_imaginarni,$dph,$sleva,$foto,$po
   elseif($novinka==1){$nahledy .= '<img src="/img/novinka.png" alt="novinka" title="novinka" style="position: absolute; z-index: 5; margin-top: 0px; margin-left: 230px;"  />';}
   elseif($doporucujeme==1){$nahledy .= '<img src="/img/doporucujeme.png" alt="doporučujeme" title="doporučujeme" style="position: absolute; z-index: 5; margin-top: 0px; margin-left: 230px;"  />';}
  				 
-  $nahledy .= '<div class="nahledy_produktu_popis" id="nahledy_produktu_popis_'.$nahodne_id.'" onmouseover="zobraz_nahled(\'nahledy_produktu_popis_'.$nahodne_id.'\');" onmouseout="skryj_nahled(\'nahledy_produktu_popis_'.$nahodne_id.'\');">'.$popis.'</div>';				 
+  			 
 			 
- $nahledy .= '<div class="nahledy_produktu_foto_obal" onmouseover="zobraz_nahled(\'nahledy_produktu_popis_'.$nahodne_id.'\');" onmouseout="skryj_nahled(\'nahledy_produktu_popis_'.$nahodne_id.'\');"><a href="'.$url.'"  title="'.$nazev.'"><img src="'.__URL2__.'/img_produkty/velke/'.$foto.'" 
+ $nahledy .= '<div class="nahledy_produktu_foto_obal" onmouseover="zobraz_nahled(\'nahledy_produktu_popis_'.$nahodne_id.'\');" onmouseout="skryj_nahled(\'nahledy_produktu_popis_'.$nahodne_id.'\');"><div class="nahledy_produktu_popis" id="nahledy_produktu_popis_'.$nahodne_id.'" onmouseover="zobraz_nahled(\'nahledy_produktu_popis_'.$nahodne_id.'\');" onmouseout="skryj_nahled(\'nahledy_produktu_popis_'.$nahodne_id.'\');">'.$popis.'</div><a href="'.$url.'"  title="'.$nazev.'"><img src="'.__URL2__.'/img_produkty/velke/'.$foto.'" 
  alt="'.$nazev.'" title="'.$nazev.'" style="width: 339px;" /></a></div>';
  $nahledy .= '<div class="clear" style="height: 15px;"></div>';
  $nahledy .= '<div class="nahledy_produktu_nazev"><a href="'.$url.'"  title="'.$nazev.'">'.$nazev.'</a></div>';
@@ -1896,7 +1896,7 @@ if($cena_s_dph >= 3000)
 	
 	$ret_pr .= '<div class="aktuality_foot_nadpis2">DOPORUČENÉ PŘÍSLUŠENSTVÍ</div>';
 	
-	$ret_pr .= '<div class="clear" style="height: 20px;"></div>';
+	$ret_pr .= '<div class="clear" style="height: 20px;"></div><div class="nahled_obal_wrap">';
 
 
 	
@@ -1977,7 +1977,7 @@ if($cena_s_dph >= 3000)
 			  }
 	
 	
-	$ret_pr .= '<div class="clear" style="height: 20px;"></div>';
+	$ret_pr .= '</div><div class="clear" style="height: 20px;"></div>';
 	
 	$ret_pr .= '<div class="aktuality_foot_nadpis2">OBDOBNÉ PRODUKTY</div>';
 	
