@@ -626,9 +626,11 @@ span.p_nadpisy{
 @media screen and (max-width: 991px){
     .top_pruh2{
         height: 52px;
+        background-image: none;
     }
-    .top_pruh2_logo a{
+    .top_pruh2_logo{
         flex-grow: 1;
+        padding-left: 20px;
     }
     .top_pruh2_in{
         height: 100%;
