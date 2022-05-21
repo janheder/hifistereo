@@ -593,10 +593,10 @@ span.p_nadpisy{
     .menu_kat_in{
         padding-left: 0 !important;
     }
-    body .--navActive{
+    body.--navActive{
         overflow: hidden;
     }
-    body .--navActive .top_menu_kat_obal{
+    body.--navActive .top_menu_kat_obal{
         transform: translateX(0%);
         content-visibility: visible;
     }
