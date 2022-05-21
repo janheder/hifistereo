@@ -316,7 +316,15 @@ ul.bxslider > li{
 }
 .pata_box1, .pata_box2{
     height: auto;
+    width: 33.333%;
 }
+@media screen and (max-width: 767px){
+    .pata_box1, .pata_box2{
+        height: auto;
+        width: 100%;
+    }
+}
+
 span.p_nadpisy{
     display: block;
     padding-bottom: 20px;
@@ -351,6 +359,14 @@ span.p_nadpisy{
     height: auto;
     margin: 0;
 }
+@media screen and (max-width: 991px){
+    .nl .holder{
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+}
+
 
 #neewsletter_f a{
     padding-top: 10px;
