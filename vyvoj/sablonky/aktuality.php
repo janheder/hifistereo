@@ -112,6 +112,7 @@ reklamni_okno($_GET['p']);
 
 <div class="top_pruh2">
 	<div class="top_pruh2_in">
+	<div id="navToggle"><span></span></div>
 		<div class="top_pruh2_logo"><a href="/" title="<? echo __TITLE_LOGA__;?>"><img src="/img/logo.png" alt="logo" /></a><h1><? echo __TITLE_LOGA__;?></h1></div>
 		<div class="top_pruh2_text">ŠPIČKOVÁ HUDEBNÍ TECHNIKA<br />PRO VŠECHNY FAJNŠMEKRY</div>
 		
@@ -360,6 +361,7 @@ reklamni_okno($_GET['p']);
       <img src="/img/nahoru.png" alt="nahoru"  />
     </a>
 </div>
+
 <script type="text/javascript">
 
 
