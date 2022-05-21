@@ -518,7 +518,7 @@ span.p_nadpisy{
 #navToggle span{
     height: 2px;
     width: 18px;
-    background: #06070E;
+    background: white;
     display: block;
     position: absolute;
     top: 50%;
@@ -579,6 +579,9 @@ span.p_nadpisy{
     body .--navActive .top_menu_kat_obal{
         transform: translateX(0%);
         content-visibility: visible;
+    }
+    #navToggle{
+        display:  flex;
     }
 }
 
