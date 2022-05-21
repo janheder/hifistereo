@@ -599,6 +599,8 @@ span.p_nadpisy{
     float: none;
     width: auto;
     height: auto;
+    max-height: 100%;
+    display: flex;
 }
 .top_pruh2_logo a{
     display: flex;
@@ -619,8 +621,39 @@ span.p_nadpisy{
 }
 
 @media screen and (max-width: 991px){
+    .top_pruh2{
+        height: 52px;
+    }
+    .top_pruh2_logo a{
+        flex-grow: 1;
+    }
     .top_pruh2_in{
-        height: 56px;
+        height: 100%;
+        padding: 0;
+    }
+    .top_pruh2_text{
+        display: none;
+    }
+    .top_pruh2_kosik, .top_pruh2_kosik_h{
+        line-height: 1;
+        height: 100%;
+        font-size: 0;
+        background-position: bottom right;
+        width: 52px;
+    }
+    .top_pruh2_prihlas, .top_pruh2_prihlas_h{
+        line-height: 1;
+        height: 100%;
+        font-size: 0;
+        background-position: bottom right;
+        width: 52px;
+    }
+    .top_pruh2_vyhl, .top_pruh2_vyhl_h{
+        line-height: 1;
+        height: 100%;
+        font-size: 0;
+        background-position: bottom right;
+        width: 52px;
     }
 }
 
