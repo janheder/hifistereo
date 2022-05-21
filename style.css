@@ -290,7 +290,11 @@ ul.bxslider > li{
         grid-template-columns: 1fr 1fr;
     }
 }
-
+@media screen and (max-width: 575px){
+    .infobox_pata-wrap{
+        grid-template-columns: 1fr;
+    }
+}
 .infobox_pata {
     float: none;
     width: 100%;
@@ -674,7 +678,13 @@ span.p_nadpisy{
     width: 100%;
     display: flex;
 }
+@media screen and (max-width: 767px){
 
+    .aktuality_box_in-wrap{
+        grid-template-columns: 1fr;
+        grid-gap: 20px;
+    }
+}
 .det_box_sklad{
     display: flex;
     justify-content: space-between;
