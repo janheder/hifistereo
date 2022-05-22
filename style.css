@@ -49,7 +49,11 @@ img{
     margin: 40px auto;
     width: 100%;
 }
-
+@media screen and (max-width: 991px){
+    .holder2{
+        margin-top: 0;
+    }
+}
 .clear{
     display: flex !important;
     height: 0 !important;
@@ -452,7 +456,8 @@ span.p_nadpisy{
     margin-right: 0;
     margin-bottom: 0;
     cursor: pointer;
-
+display: flex;
+align-items: center;
 }
 .submenu_kat_box_obr{
     height: 100%;
@@ -460,6 +465,15 @@ span.p_nadpisy{
 .submenu_kat_box_obr img{
     max-height: 100%;
 }
+.submenu_kat_box_text {
+    float: none;
+    width: auto;
+    height: auto;
+    margin-left: 10px;
+    margin-top: 0px;
+    overflow: hidden;
+}
+
 #filtr{
     display: flex;
     flex-direction: column;
