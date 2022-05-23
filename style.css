@@ -327,6 +327,9 @@ ul.bxslider > li{
         height: auto;
         width: 100%;
     }
+    .pata_box1{
+        margin-bottom: 40px;
+    }
 }
 
 span.p_nadpisy{
@@ -363,15 +366,24 @@ span.p_nadpisy{
     height: auto;
     margin: 0;
 }
+
 @media screen and (max-width: 991px){
     .nl .holder{
         flex-direction: column;
         justify-content: center;
         align-items: center;
     }
+    .pata_odkazy{
+        margin-top: 30px;
+    }
 }
 
-
+#neewsletter_f > p{
+    display: flex;
+}
+.inp_n{
+    width: 100%;
+}
 #neewsletter_f a{
     padding-top: 10px;
     display: inline-flex;
@@ -419,8 +431,12 @@ span.p_nadpisy{
     display: flex;
     margin-bottom: 10px;
 }
-.inp_s1{
+.inp_s1 {
     margin-left: 20px;
+    width: auto;
+    float: none;
+    padding: 0 20px;
+    background-image: none;
 }
 .aktuality_foot_archiv + .clear{
     height: 40px !important;
