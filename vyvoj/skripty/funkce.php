@@ -1633,7 +1633,7 @@ function detail_produtku($id_p)
 	 <div style="float: left;"><span class="seda">Katalogové číslo:</span> <b>'.$row_n->kat_cislo.'</b></div>
 	 <div style="float: left; margin-left: 30px;"><span class="seda">Výrobce:</span> <b>'.$row_n->vyrobce.'</b></div>
 	 <div class="clear" style="height: 20px;"></div>
-	 '.stripslashes($row_n->popis).'
+	 <span class="product-desc">'.stripslashes($row_n->popis).'</span>
 	 <div class="clear" style="height: 5px;"></div>
 	 <div style="text-align: right;"><a href="#popis">Více informací</a></div>
 	 </div>';
@@ -1667,11 +1667,11 @@ function detail_produtku($id_p)
 		  $dp = $row_n->cena_imaginarni - $cena_s_dph;
 		  $tp = round($dp / $jp,2);
 		  
-		   $ret_pr .= '<div style="height: 20px; line-height: 20px; font-size: 20px; float: left;">Původní cena</div>';
-		   $ret_pr .= '<div style="height: 20px; line-height: 20px; font-size: 20px; float: right; text-decoration: line-through;">'.$row_n->cena_imaginarni.' '.__MENA__.'</div>';
+		   $ret_pr .= '<div class="product-price-old"><div style="height: 20px; line-height: 20px; font-size: 20px; float: left;">Původní cena</div>';
+		   $ret_pr .= '<div style="height: 20px; line-height: 20px; font-size: 20px; float: right; text-decoration: line-through;">'.$row_n->cena_imaginarni.' '.__MENA__.'</div></div>';
 		   $ret_pr .= '<div class="clear" style="height: 10px;"></div>';
-		   $ret_pr .= '<div style="height: 20px; line-height: 20px; font-size: 20px; float: left;">Akční cena s DPH <span style="color:#32C907">(-'.$tp.'%)</span></div>';
-		   $ret_pr .= '<div style="height: 20px; line-height: 20px; float: right; font-size: 32px; font-weight: bold; color: #31c907;">'.$cena_s_dph.' '.__MENA__.'</div>';
+		   $ret_pr .= '<div class="product-price"><div style="height: 20px; line-height: 20px; font-size: 20px; float: left;">Akční cena s DPH <span style="color:#32C907">(-'.$tp.'%)</span></div>';
+		   $ret_pr .= '<div style="height: 20px; line-height: 20px; float: right; font-size: 32px; font-weight: bold; color: #31c907;">'.$cena_s_dph.' '.__MENA__.'</div></div>';
 
 
 		
@@ -1679,15 +1679,15 @@ function detail_produtku($id_p)
 	  else
 	  {
 		  $ret_pr .= '<div class="clear" style="height: 30px;"></div>';
-		  $ret_pr .= '<div style="height: 20px; line-height: 20px; font-size: 20px; float: left;">Cena s DPH</div>';
-		  $ret_pr .= '<div style="height: 20px; line-height: 20px; float: right; font-size: 32px; font-weight: bold; color: #31c907;">'.$cena_s_dph.' '.__MENA__.'</div>';
+		  $ret_pr .= '<div class="product-price"><div style="height: 20px; line-height: 20px; font-size: 20px; float: left;">Cena s DPH</div>';
+		  $ret_pr .= '<div style="height: 20px; line-height: 20px; float: right; font-size: 32px; font-weight: bold; color: #31c907;">'.$cena_s_dph.' '.__MENA__.'</div></div>';
 
 	  }
 	       
 	       
 	
 	 $ret_pr .= '
-	 <div class="clear" style="height: 20px;"></div>';
+	 <div class="clear" style="height: 20px;"></div><div class="product-cta">';
 	 
 	 
 	 // essox
@@ -1703,7 +1703,7 @@ function detail_produtku($id_p)
 				 </form>';
 	  
 	  
-	  $ret_pr .= '<div class="clear" style="height: 20px;"></div>';
+	  $ret_pr .= '</div><div class="clear" style="height: 20px;"></div>';
 	  
 	  
 	  	 // kalkulacka essox
@@ -1726,7 +1726,7 @@ if($cena_s_dph >= 3000)
 </FinitServiceRequest>';	
 	
   $ret_pr .= '<div class="clear" style="height: 20px;"></div>';
-  $ret_pr .= '<div style=" clear: both; width: auto; text-align: right;">';
+  $ret_pr .= '<div style=" clear: both; width: auto; text-align: right;" class="produkt-kalkulacka">';
   $ret_pr .= '<b style="font-size: 14px; color: red">10 x '.round($cena_s_dph / 10).' Kč + '.round($cena_s_dph / 10).' Kč</b> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;';
   $ret_pr .= '<a onclick="window.open(\''.__ESSOX_URL__.'/?ESXCode=5&ESXAuth='.base64_encode($XML_DATA).'\', \'_blank\', \'toolbar=0,resizable=1, status=1, width=700, height=650\');" style="cursor: pointer;">Kalkulačka splátek</a>';
   $ret_pr .= '</div>';

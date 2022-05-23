@@ -331,14 +331,15 @@ private $slevova_skupina_zakaznika;
 
     
     $tabulka_kosik .= '<div class="clear" style="height: 20px;"></div>
-    <div class="kos_celkem">
+    <div class="kos_celkem"><div>
+	<span>
     <img src="/img/auto2.png" alt="doprava zdarma" style="float: left;" />
     <div style="float: left; margin-top: 0px;"><span style="font-size: 18px; color: #1f1f1f;  font-weight: bold;">Doprava zdarma</span><br />
-    <span style="font-size: 18px; color: #1f1f1f; font-weight: 300;">nad '.__PAB_2__.' '.__MENA__.'</span></div>
+    <span style="font-size: 18px; color: #1f1f1f; font-weight: 300;">nad '.__PAB_2__.' '.__MENA__.'</span></div></span>
     
     <div class="kos_celkem_in">Celkem: &nbsp;&nbsp;<span style="font-size: 34px; color: #1f1f1f;  font-weight: bold;" id="js_cena">'.$cena_final.'</span> 
     <span style="font-size: 34px; color: #1f1f1f; font-weight: bold;">'.__MENA__.'</span><br />
-    <span style="font-size: 14px; color: #777777;">včetně DPH</span></div>';
+    <span style="font-size: 14px; color: #777777;">včetně DPH</span></div></div>';
    
 
    
@@ -681,12 +682,12 @@ private $slevova_skupina_zakaznika;
 
     	   
     // poznamka
-   $tabulka_kosik .= '&nbsp;&nbsp;&nbsp;&nbsp;<span style="font-size: 28px; font-weight: bold; color: #FFD631;">3.</span> <span style="font-size: 24px;  font-weight: 500; color: #1f1f1f;">POZNÁMKA</span>';
+   $tabulka_kosik .= '<div class="poznamka-wrap">&nbsp;&nbsp;&nbsp;&nbsp;<span style="font-size: 28px; font-weight: bold; color: #FFD631;">3.</span> <span style="font-size: 24px;  font-weight: 500; color: #1f1f1f;">POZNÁMKA</span>';
    $tabulka_kosik .= '<div class="clear" style="height: 20px;"></div>';	 
-   $tabulka_kosik .= '<textarea name="poznamka" class="poznamka_kosik">'.strip_tags($_SESSION['poznamka']).'</textarea>';
+   $tabulka_kosik .= '<div class="poznamka-form"><textarea name="poznamka" class="poznamka_kosik">'.strip_tags($_SESSION['poznamka']).'</textarea>';
    $tabulka_kosik .= '<div style="float: right; width: 500px;">Chcete nám sdělit ještě nějakou důležitou zprávu k vaší objednávce?<br />Využijte prosím, tohoto formuláře.
-   <br /><br />Napsat do něj můžete také upřesňující informace o místě, kam máme Vaše zboží doručit (nejbližší orientační bod apod.)</div>';
-   $tabulka_kosik .= '<div class="clear" style="height: 30px;"></div>';	 
+   <br /><br />Napsat do něj můžete také upřesňující informace o místě, kam máme Vaše zboží doručit (nejbližší orientační bod apod.)</div></div>';
+   $tabulka_kosik .= '<div class="clear" style="height: 30px;"></div></div>';	 
    
     	   
    $tabulka_kosik .=  '<input type="button" class="sub_dk3"  title="pokračovat v nákupu" value="Pokračovat v nákupu"  style="float: left;" 

@@ -56,11 +56,16 @@ img {
     .holder2 {
         margin-top: 0;
     }
+    .holder2  > h1{
+        text-align: center;
+        margin-bottom: 20px;
+    }
 }
 
 .clear {
     display: flex !important;
     height: 0 !important;
+    margin: 0 !important;
 }
 
 .product-grid .clear, .boxy_produkty_uvodka .clear, .box_nadpisy_adn .clear {
@@ -157,14 +162,19 @@ ul.bxslider>li {
     top: 29px;
     right: 41px;
 }
+.poradna_box {
+    z-index: 9999;
+}
+
 @media screen and (max-width: 991px) {
     .top_kosik_pocet {
         top: 20px;
         right: 4px;
     }
-}
-.poradna_box {
-    z-index: 9999;
+    .poradna_box {
+        display: none;
+    }
+    
 }
 
 .box_nadpisy_adn {
@@ -232,6 +242,8 @@ ul.bxslider>li {
 .nahledy_produktu_foto_obal {
     position: relative;
     padding-bottom: 100%;
+    height: auto;
+    line-height: 1;
 }
 
 .nahledy_produktu_foto_obal a {
@@ -253,7 +265,11 @@ ul.bxslider>li {
     object-fit: contain;
     width: auto !important;
 }
-
+@media screen and (max-width:575px) {
+    .nahledy_produktu_foto_obal {
+        
+    }
+}
 .nahledy_produktu>img {
     margin: 0 !important;
     right: 20px;
@@ -305,11 +321,6 @@ ul.bxslider>li {
     margin-top: 20px;
 }
 
-@media screen and (max-width: 991px) {
-    .boxy_produkty_uvodka {
-        grid-template-columns: 1fr 1fr;
-    }
-}
 
 .drobinka {
     height: 60px;
@@ -317,6 +328,18 @@ ul.bxslider>li {
 }
 
 .drobinka a {}
+
+
+@media screen and (max-width: 991px) {
+    .drobinka {
+        height: auto;
+        line-height: 1;
+        margin-bottom: 20px;
+    }
+    .boxy_produkty_uvodka {
+        grid-template-columns: 1fr 1fr;
+    }
+}
 
 
 
@@ -615,7 +638,10 @@ span.p_nadpisy {
     background-color: #ffffff;
     flex-shrink: 0;
 }
-
+.box_nejprodavanejsi_foto img{
+    height: 100%;
+    object-fit: contain;
+}
 .box_nejprodavanejsi_cislo1 {
     position: relative;
     flex-shrink: 0;
@@ -639,6 +665,11 @@ span.p_nadpisy {
     z-index: 9999;
 }
 
+@media screen and (max-width: 991px) {
+    #top-link-block {
+        display: none;
+    }
+}
 
 #navToggle {
     height: 100%;
@@ -908,10 +939,15 @@ span.p_nadpisy {
 .kat_filtr {
     height: auto;
 }
-
+.nahledy_dk {
+    float: none;
+    flex-grow: 1;
+    padding-left: 20px;
+}
 .sub_dk {
     width: auto;
     padding: 0 25px;
+    width: 100%;
 }
 
 
@@ -941,3 +977,45 @@ span.p_nadpisy {
         width: 100%;
     }
 }
+
+
+.detail_foto > div{
+    width: 100% !important;
+    margin: 0 !important;
+  }
+  .detail_box_pravy_obal_in h1{
+    margin-bottom: 10px;
+  }
+  .product-desc{
+    display: flex;
+    margin-top: 10px;
+  }
+  .product-price-old{
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 10px;
+  }
+  .product-price{
+    display: flex;
+    justify-content: space-between;
+     margin-bottom: 30px;
+   }
+  .product-cta{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 40px;
+  }
+  .product-cta form{
+    margin: 0 !important;
+        flex-grow: 1;
+      width: 100%;
+    text-align: right;
+    padding-left: 15px;
+  }
+  .product-cta> div{
+    flex-shrink: 0;
+  }
+  .product-cta .sub_dk{
+    flex-grow: 1;
+  }
