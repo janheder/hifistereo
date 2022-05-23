@@ -168,13 +168,17 @@ ul.bxslider>li {
 
 @media screen and (max-width: 991px) {
     .top_kosik_pocet {
-        top: 20px;
-        right: 4px;
+        top: 14px;
+        right: 6px;
     }
     .poradna_box {
         display: none;
     }
-    
+    .vice_kat{
+        float: none;
+        margin-top: 20px;
+        text-align: center;
+    }
 }
 
 .box_nadpisy_adn {
@@ -216,6 +220,9 @@ ul.bxslider>li {
 
     .box_nejprodavanejsi {
         margin-top: -1px;
+    }
+    .box_nejprodavanejsi_nazev{
+        font-size: 16px;
     }
 }
 
@@ -315,7 +322,16 @@ ul.bxslider>li {
     flex-direction: column;
     justify-content: center;
 }
+@media screen and (max-width: 757px) {
+    .nahledy_produktu_cena {
+        flex-shrink: 0;
+        font-size: 22px;
+    }
 
+    .nahledy_dk {
+        padding-left: 10px;
+    }
+}
 
 .nahledy_produktu_dostupnost {
     margin-top: 20px;
@@ -558,6 +574,10 @@ span.p_nadpisy {
 @media screen and (max-width: 575px) {
     .submenu-wrap {
         grid-template-columns: 1fr 1fr 1fr;
+    }
+    .product-grid {
+        grid-template-columns: 1fr;
+        grid-gap: 10px;
     }
 }
 
@@ -818,7 +838,7 @@ span.p_nadpisy {
         line-height: 1;
         height: 100%;
         font-size: 0;
-        background-position: bottom right;
+        background-position: bottom 7px right 2px;
         width: 52px;
     }
 
@@ -826,7 +846,7 @@ span.p_nadpisy {
         line-height: 1;
         height: 100%;
         font-size: 0;
-        background-position: bottom right;
+        background-position: bottom 12px right 8px;
         width: 52px;
     }
 
@@ -834,8 +854,9 @@ span.p_nadpisy {
         line-height: 1;
         height: 100%;
         font-size: 0;
-        background-position: bottom right;
+        background-position: center bottom 11px;
         width: 52px;
+
     }
 }
 
@@ -1068,19 +1089,35 @@ span.p_nadpisy {
   }
 
 
-  @media screen and (max-width: 767px) {
-  .foxentry-form tr{
-    width: 100%;
-      display: flex;
-      flex-direction: column;
-  }
-  .foxentry-form tr td{
-  flex-direction: column;
-      display: flex;
-      margin-bottom: 15px;
-  }
-  .foxentry-form tr:nth-child(even){
-    display: none;
-  }
+@media screen and (max-width: 767px) {
+    .foxentry-form tr{
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+    }
+    .foxentry-form tr td{
+        flex-direction: column;
+        display: flex;
+        margin-bottom: 15px;
+        width: 100%;
+    }
+    .foxentry-form tr:nth-child(even){
+        display: none;
+    }
+    .foxentry-form tr:nth-child(even){
+        display: none;
+      }
+      .foxentry-form tr:nth-child(12){
+        display: flex
+      }
+      .foxentry-form tr:nth-child(14){
+        display: flex
+      }
+      .foxentry-form tr:nth-child(16){
+        display: flex
+      }
+      .foxentry-form tr:nth-child(9) td{
+          padding-bottom: 20px;
+      }
 }
   
