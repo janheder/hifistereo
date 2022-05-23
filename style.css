@@ -925,6 +925,11 @@ span.p_nadpisy {
 
 .krok_a, .krok_na {
     width: auto;
+    line-height: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
 }
 
 @media screen and (max-width: 991px) {
@@ -932,6 +937,10 @@ span.p_nadpisy {
         margin-bottom: 0px;
         margin-top: 0;
     }
+    .krok_a, .krok_na {
+        font-size: 14px;
+    }
+    
 }
 
 
