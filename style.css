@@ -176,7 +176,7 @@ ul.bxslider>li {
     }
     .vice_kat{
         float: none;
-        margin-top: 20px;
+        margin-top: 0px;
         text-align: center;
     }
 }
@@ -998,6 +998,7 @@ span.p_nadpisy {
         margin: 0;
         top: 52px;
         width: 100%;
+        z-index: 9999;
     }
     .vyhl_okno form{
         height: 100%;
@@ -1121,3 +1122,37 @@ span.p_nadpisy {
       }
 }
   
+
+.kos_celkem form td{
+    padding: 5px 0;
+  }
+  .kos_celkem form tr > td:last-child{
+    white-space: nowrap;
+    text-align: right;
+  }
+  .kos_celkem > div{
+    margin: 20px 0;
+  display: flex;
+    justify-content: space-between;
+  }
+  .kos_celkem_in{
+  float: none;
+      line-height: 1;
+    height: auto;
+  }
+  .kos_celkem > div > span{
+        display: flex;
+      flex-shrink: 0;
+      flex-grow: 1;
+        align-items: center;
+  }
+  .poznamka-wrap{
+    margin-bottom: 40px;
+  }
+  .poznamka-form{
+         display: flex;
+    margin-top: 20px;
+  }
+  .poznamka_kosik{
+    margin-right: 20px;
+  }
