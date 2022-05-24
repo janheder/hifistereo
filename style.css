@@ -840,6 +840,8 @@ span.p_nadpisy {
         font-size: 0;
         background-position: bottom 7px right 2px;
         width: 52px;
+        
+    flex-shrink: 0;
     }
 
     .top_pruh2_prihlas, .top_pruh2_prihlas_h {
@@ -848,6 +850,8 @@ span.p_nadpisy {
         font-size: 0;
         background-position: bottom 12px right 8px;
         width: 52px;
+        
+    flex-shrink: 0;
     }
 
     .top_pruh2_vyhl, .top_pruh2_vyhl_h {
@@ -857,6 +861,7 @@ span.p_nadpisy {
         background-position: center bottom 11px;
         width: 52px;
 
+        flex-shrink: 0;
     }
 }
 
