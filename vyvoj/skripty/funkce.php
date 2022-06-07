@@ -2246,7 +2246,7 @@ function kategorie_produktu()
 			$where .= " AND  P.vyrobce IN ('" . implode("','", array_keys($vyrobci_array)) . "')  ";
 		 }
 	
-		$ret_kat .= '<div class="box_vyrobci" id="box_vyrobci" style="display: none;"><div class="clear" style="height: 10px;"></div>';  
+		$ret_kat .= '<div class="under-filter"><div class="box_vyrobci" id="box_vyrobci" style="display: none;"><div class="clear" style="height: 10px;"></div>';  
 		$query_skupina_vyr = MySQL_Query("SELECT P.id, P.vyrobce FROM produkty P ".$where_vyr."  GROUP BY P.vyrobce") or die(err(1));
 	    $n = 1;
 	    	// vypis vyrobcu
@@ -2331,7 +2331,7 @@ function kategorie_produktu()
 
 	
 
-    $ret_kat .= '</form>';
+    $ret_kat .= '</div></form>';
     
     
 

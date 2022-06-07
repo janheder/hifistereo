@@ -1400,3 +1400,12 @@ span.p_nadpisy {
  .sub_vyhledavani, .input_vyhledavani{
      margin: 0;
  }
+
+.under-filter{
+     display: flex;
+    margin-bottom: 20px;
+}
+.under-filter .strankovani_kategorie{
+    width: 100%;
+    margin: 0;
+}
