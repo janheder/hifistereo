@@ -363,7 +363,15 @@ ul.bxslider>li {
     }
 }
 
-
+@media screen and (max-width: 575px) {
+    .boxy_produkty_uvodka {
+        grid-template-columns:1fr;
+        grid-gap: 10px;
+    }
+    .box_nadpisy_adn {
+        grid-gap: 5px;
+    }
+}
 
 .infobox_pata-wrap {
     display: grid;
@@ -1367,3 +1375,16 @@ span.p_nadpisy {
         padding: 0 10px;
       }
     }  
+
+
+    @media screen and (max-width: 575px){
+        .bx-wrapper .bx-pager, .bx-wrapper .bx-controls-auto{
+            bottom: 0;
+        }
+        .slider_uvodka_box_nadpis{
+            max-height: 56px;
+            margin-top: 0px;
+            font-size: 22px;
+        }
+        
+      }
