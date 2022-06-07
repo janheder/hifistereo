@@ -1237,3 +1237,133 @@ span.p_nadpisy {
       top: 52px;
     }
   }
+
+  @media screen and (max-width: 991px){
+    .slider_uvodka_box {
+      padding: 20px;
+      padding-top: 180px;
+  }
+    .slider_uvodka_box_ceny_tl{
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+    }
+    .slider_uvodka_box_cena{
+      margin-bottom: 20px;
+      font-size: 30px;
+    }
+    .slider_uvodka_box_nadpis{
+      text-align:center;
+    }
+    
+  }
+  @media screen and (max-width: 991px){
+  
+
+    .drobinka {
+       
+        margin-top: 20px;
+    }
+    }
+    .detail_foto > div{
+      border-bottom: 1px solid #eee;
+      min-height: auto !important;
+    }
+    .detail_foto > .foto_male{
+      width: 25% !important;
+      
+      border: 0;
+    }
+    
+    .detail_foto > div a{
+      padding-bottom: 0;
+    }
+    .detail_foto > div.clear{
+      border: 0;
+    }
+    @media screen and (max-width: 575px){
+    .detail_foto > .foto_male {
+       
+      height: 80px;
+    }
+      .product-cta {
+        flex-direction: column;
+      }
+    }
+    
+    .product-cta form{
+      position: relative;
+    }
+    .product-cta p img{
+      margin-top: 0px !important;
+          top: 3px;
+    }
+    .product-cta p img:nth-child(4){
+      margin-top: 16px !important;
+    }
+    
+    .input_detail {
+        height: 32px;
+    }
+    .product-cta .sub_dk{
+      margin-top: 10px;
+    }
+    
+    .aktuality_foot_nadpis2, .product-grid{
+        max-width: 1220px;
+        position: relative;
+        z-index: 9000;
+        min-height: 10px;
+        text-align: left;
+        line-height: 130%;
+        padding-right: 20px;
+        padding-left: 20px;
+        width: 100%;
+        margin: 0 auto;
+        background: transparent;
+        border: 0;
+    }
+    .aktuality_foot_nadpis2{
+      margin: 20px auto !important;
+      max-width: 1180px;
+      background: white;
+      display: flex;
+      justify-content: center;
+      align-items:center;
+      border: solid 1px #dedede;
+    }
+    
+    @media screen and (max-width: 767px){
+    #TB_window {
+        max-width: 95vw;
+        transform: translateX(-50%);
+        left: 50%;
+        margin: 0 !important;
+        top: 30%;
+      width: 100% !important;
+    }
+      #TB_window  .obal{
+        display: flex;
+        flex-direction: column;
+      }
+    }
+    .det_box_sklad {
+        flex-wrap: wrap;
+        height: auto;
+        padding-bottom: 20px;
+    }
+    .ps_top > div{
+      line-height: 1;
+      display: flex;
+      justify-content: center;
+      align-items:center;
+    }
+    @media screen and (max-width: 767px){
+      .ps_top > div{
+      font-size: 15px;
+    }
+      .holder, .holder3, .holder4{
+        padding: 0 10px;
+      }
+    }  
