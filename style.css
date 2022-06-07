@@ -1388,3 +1388,18 @@ span.p_nadpisy {
         }
         
       }
+
+
+
+      @media screen and (max-width: 767px){
+    .poznamka-form {
+        display: flex;
+        flex-direction: column;
+    }  
+    .poznamka_kosik{
+        width: 100%;
+    }
+    .poznamka_kosik + div{
+        width: 100% !important;
+    }
+ }
