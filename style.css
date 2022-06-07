@@ -312,7 +312,6 @@ ul.bxslider>li {
     justify-content: space-between;
     height: auto;
     margin-bottom: 20px;
-
 }
 
 .nahledy_produktu_cena {
@@ -323,13 +322,18 @@ ul.bxslider>li {
     justify-content: center;
 }
 @media screen and (max-width: 757px) {
+    .nahledy_produktu_ceny {
+        flex-wrap: wrap;
+    }
+    
     .nahledy_produktu_cena {
         flex-shrink: 0;
         font-size: 22px;
     }
 
-    .nahledy_dk {
-        padding-left: 10px;
+    .nahledy_produktu_ceny .nahledy_dk {
+        padding-left: 0px;
+        padding-top: 10px;
     }
 }
 
