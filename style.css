@@ -1268,14 +1268,14 @@ span.p_nadpisy {
     }
     
   }
-  @media screen and (max-width: 991px){
-  
-
+@media screen and (max-width: 991px){
     .drobinka {
-       
         margin-top: 20px;
     }
+    .holder2 .drobinka {
+        margin-top: 0px;
     }
+}
     .detail_foto > div{
       border-bottom: 1px solid #eee;
       min-height: auto !important;

@@ -1979,9 +1979,9 @@ if($cena_s_dph >= 3000)
 	
 	$ret_pr .= '</div><div class="clear" style="height: 20px;"></div>';
 	
-	$ret_pr .= '<div class="aktuality_foot_nadpis2">OBDOBNÉ PRODUKTY</div>';
+	$ret_pr .= '<div class="holder"><div class="aktuality_foot_nadpis2">OBDOBNÉ PRODUKTY</div>';
 	
-	$ret_pr .= '<div class="clear" style="height: 20px;"></div><div class="holder"><div class="product-grid">';
+	$ret_pr .= '<div class="clear" style="height: 20px;"></div><div class="product-grid">';
 	   // obdobné produkty
    	$id_kat = unserialize($row_n->id_kategorie);
 	
