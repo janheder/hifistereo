@@ -1320,23 +1320,9 @@ span.p_nadpisy {
       margin-top: 10px;
     }
     
-    .aktuality_foot_nadpis2, .product-grid{
-        max-width: 1220px;
-        position: relative;
-        z-index: 9000;
-        min-height: 10px;
-        text-align: left;
-        line-height: 130%;
-        padding-right: 20px;
-        padding-left: 20px;
-        width: 100%;
-        margin: 0 auto;
-        background: transparent;
-        border: 0;
-    }
+
     .aktuality_foot_nadpis2{
       margin: 20px auto !important;
-      max-width: 1180px;
       background: white;
       display: flex;
       justify-content: center;
