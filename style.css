@@ -132,7 +132,7 @@ ul.bxslider>li {
     margin-top: 0;
 }
 
-.top_pruh2_vyhl, .top_pruh2_kosik, .top_pruh2_prihlas {
+.top_pruh2_vyhl, .top_pruh2_kosik, .top_pruh2_prihlas, .top_pruh2_prihlas_h, .top_pruh2_vyhl_h {
     line-height: 60px;
     display: flex;
     justify-content: center;
@@ -203,7 +203,7 @@ ul.bxslider>li {
 @media screen and (max-width: 767px) {
     .box_nadpisy_adn {
         grid-template-columns: 1fr;
-        grid-gap: 20px;
+        grid-gap: 10px;
     }
 }
 
@@ -358,6 +358,7 @@ ul.bxslider>li {
     }
     .boxy_produkty_uvodka {
         grid-template-columns: 1fr 1fr;
+        grid-gap: 10px;
     }
 }
 
@@ -1165,3 +1166,35 @@ span.p_nadpisy {
   .poznamka_kosik{
     margin-right: 20px;
   }
+
+  .vyhl_okno {
+    position: absolute;
+  right: 0;
+  top: 120px;
+    z-index: 201;
+    width: 400px;
+    height: auto;
+    margin-top: 0px;
+    margin-left: 0px;
+    background-color: #353535;
+    padding: 20px;
+}
+.top_pruh2_in{
+  position: relative;
+}
+.vyhl_okno form p{
+  display: flex;
+}
+
+.prihlas_okno{
+      position: absolute;
+  right: 0;
+  top: 120px;
+    z-index: 99999;
+    width: 400px;
+    height: auto;
+    margin-top: 0px;
+    margin-left: 0px;
+    background-color: #353535;
+    padding: 20px;
+}
