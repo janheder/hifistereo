@@ -1243,6 +1243,8 @@ span.p_nadpisy {
   }
     .vyhl_okno, .prihlas_okno{
       top: 52px;
+      width: 100%;
+    padding: 0;
     }
   }
 
@@ -1402,4 +1404,13 @@ span.p_nadpisy {
     .poznamka_kosik + div{
         width: 100% !important;
     }
+ }
+
+ form[name="pokladna_1"] table{
+     width: 100% !important;
+     margin-bottom: 20px;
+ }
+
+ .sub_vyhledavani, .input_vyhledavani{
+     margin: 0;
  }
