@@ -482,6 +482,7 @@ span.p_nadpisy {
 
 #neewsletter_f>p {
     display: flex;
+    padding-bottom: 5px;
 }
 
 .inp_n {
@@ -1025,6 +1026,7 @@ span.p_nadpisy {
         align-items: center;
         justify-content: center;
         width: 100%;
+        padding: 10px;
     }
 }
 
@@ -1246,6 +1248,9 @@ span.p_nadpisy {
       width: 100%;
     padding: 0;
     }
+    .prihlas_okno{
+      padding: 10px;
+      }
   }
 
   @media screen and (max-width: 991px){
@@ -1374,7 +1379,7 @@ span.p_nadpisy {
             margin-top: 0px;
             font-size: 22px;
         }
-        
+        .aktuality_foot_archiv{display: none;}
       }
 
 
