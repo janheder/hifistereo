@@ -1436,7 +1436,7 @@ span.p_nadpisy {
 }
 }
 @media screen and (max-width: 767px){
-    form[name="zmena_poctu"] table tbody tr:first-child{
+    form[name="zmena_poctu"] > table > tbody > tr:first-child{
         display: none;
     }
     
