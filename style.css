@@ -405,6 +405,7 @@ ul.bxslider>li {
 .text_uvod_obal {
     height: auto;
     padding: 60px 0;
+    background-color: #efefef;
 }
 
 .pata_obal {
@@ -418,6 +419,9 @@ ul.bxslider>li {
 }
 
 @media screen and (max-width: 767px) {
+    .pata_obal{
+        background: #252629;
+    }
     .pata_box1, .pata_box2 {
         height: auto;
         width: 100%;
@@ -425,6 +429,9 @@ ul.bxslider>li {
 
     .pata_box1 {
         margin-bottom: 40px;
+    }
+    .pata_odkazy{
+        border-top: 1px solid rgba(255,255,255,0.1);
     }
 }
 
@@ -1421,4 +1428,10 @@ span.p_nadpisy {
     margin: 0 !important;
     display: flex;
     flex-grow: 1;
+}
+
+@media screen and (max-width: 991px){
+.top_submenu{
+    display: none !important;
+}
 }
