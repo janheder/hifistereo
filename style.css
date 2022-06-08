@@ -1403,15 +1403,17 @@ span.p_nadpisy {
 
 .under-filter{
      display: flex;
-    margin-bottom: 20px;
+    margin: 20px 0;
     align-items: center;
     justify-content: center;
 }
 .under-filter .strankovani_kategorie{
-    width: 100%;
+
     margin: 0;
 }
 
 .under-filter > div {
     margin: 0 !important;
+    display: flex;
+    flex-grow: 1;
 }
