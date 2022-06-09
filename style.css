@@ -1437,9 +1437,36 @@ span.p_nadpisy {
 }
 @media screen and (max-width: 767px){
     form[name="zmena_poctu"] > table > tbody > tr:first-child{
-        display: none;
+    display: none;
     }
-    
+
+    .kos_box1 table {
+    display: flex;
+    width: 100%;
+    flex-grow: 1;
     }
-    
+    .kos_box1 table tbody{
+    width: 100%;
+    }
+    .kos_box1 table tbody tr{
+        display: flex;
+    flex-wrap: wrap
+    }
+    .kos_box1 table tbody tr> td:first-child{
+    width: 100% !important;
+    }
+    .kos_box1 table tbody tr> td:nth-child(2),
+    .kos_box1 table tbody tr> td:nth-child(3),
+    .kos_box1 table tbody tr> td:nth-child(4),
+    .kos_box1 table tbody tr> td:nth-child(5){
+    width: 50% !important;
+    display: flex;
+    align-items: center;
+    padding: 10px 0;
+    }
+    .kos_box1 table tbody tr> td:nth-child(3) img:nth-child(2){
+    margin-top: -13px;
+    }
+}
+
 
