@@ -602,7 +602,11 @@ span.p_nadpisy {
         grid-gap: 10px;
     }
 }
-
+@media screen and (max-width: 420px) {
+    .submenu-wrap {
+        grid-template-columns: 1fr;
+    }
+}
 .submenu_kat_box {
     float: none;
     width: 100%;
@@ -614,10 +618,15 @@ span.p_nadpisy {
     cursor: pointer;
     display: flex;
     align-items: center;
+    padding: 5px;
 }
 
 .submenu_kat_box_obr {
     height: 100%;
+    float: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 .submenu_kat_box_obr img {
