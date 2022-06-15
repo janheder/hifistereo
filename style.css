@@ -601,6 +601,9 @@ span.p_nadpisy {
         grid-template-columns: 1fr;
         grid-gap: 10px;
     }
+    .inp_s1{
+        margin-left: 10px;
+    }
 }
 @media screen and (max-width: 420px) {
     .submenu-wrap {
@@ -618,7 +621,7 @@ span.p_nadpisy {
     cursor: pointer;
     display: flex;
     align-items: center;
-    padding: 5px;
+    padding: 0;
 }
 
 .submenu_kat_box_obr {
@@ -637,9 +640,10 @@ span.p_nadpisy {
     float: none;
     width: auto;
     height: auto;
-    margin-left: 10px;
+    margin-left: 5px;
     margin-top: 0px;
     overflow: hidden;
+    padding: 5px;
 }
 
 #filtr {
@@ -718,7 +722,7 @@ span.p_nadpisy {
 
 @media screen and (max-width: 991px) {
     #top-link-block {
-        display: none;
+        display: none !important;
     }
 }
 
@@ -1263,6 +1267,7 @@ span.p_nadpisy {
       top: 52px;
       width: 100%;
     padding: 0;
+    z-index: 99999;
     }
     .prihlas_okno{
       padding: 10px;
@@ -1320,6 +1325,10 @@ span.p_nadpisy {
     }
       .product-cta {
         flex-direction: column;
+      }
+      .product-cta form{
+          padding-left: 0;
+          padding-top: 20px;
       }
     }
     
