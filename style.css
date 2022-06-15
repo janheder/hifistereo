@@ -589,7 +589,7 @@ span.p_nadpisy {
 
 @media screen and (max-width: 991px) {
     .submenu-wrap {
-        grid-template-columns: 1fr 1fr 1fr 1fr;
+        grid-template-columns: 1fr 1fr 1fr;
     }
 }
 
@@ -1437,6 +1437,8 @@ span.p_nadpisy {
     margin: 0 !important;
     display: flex;
     flex-grow: 1;
+    width: auto !important;
+    align-items: center;
 }
 
 @media screen and (max-width: 991px){
@@ -1475,6 +1477,13 @@ span.p_nadpisy {
     }
     .kos_box1 table tbody tr> td:nth-child(3) img:nth-child(2){
     margin-top: -13px;
+    }
+    .under-filter{
+        flex-direction: column;
+    }
+   .strankovani_kategorie{
+        flex-wrap: wrap;
+    justify-content: center;
     }
 }
 
