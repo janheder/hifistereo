@@ -595,7 +595,7 @@ span.p_nadpisy {
 
 @media screen and (max-width: 575px) {
     .submenu-wrap {
-        grid-template-columns: 1fr 1fr 1fr;
+        grid-template-columns: 1fr 1fr;
     }
     .product-grid {
         grid-template-columns: 1fr;
@@ -1470,3 +1470,41 @@ span.p_nadpisy {
 }
 
 
+select{
+    max-width: 90vw;
+  }
+  
+  .product-price{
+    flex-wrap: wrap;
+  }
+  .product-price > div{
+    margin-bottom: 10px;
+  }
+  .product-cta form > p{
+    display: flex;
+    align-items: center;
+  }
+  .product-cta p img {
+      margin-top: 0px !important;
+      top: 35% !important;
+    transform: translateY(-50%);
+    left: 56px;
+  }
+  .product-cta .sub_dk{
+    margin-left: 20px;
+  }
+  .product-cta .sub_dk{
+    margin-top: 0 !important;
+  }
+  .detail_foto{
+    padding-bottom: 10px;
+  }
+  .nahledy_produktu_cena{
+    margin-right: 10px;
+    padding-top: 10px;
+  }
+
+  #kosik_p{
+    height: auto !important;
+  line-height: 1.5 !important;
+}
