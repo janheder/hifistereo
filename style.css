@@ -1680,6 +1680,7 @@ select{
 @media screen and (max-width: 991px){
     .holder > .holder3{
         width: 100%;
+        margin-bottom: 20px;
     }
     .holder > .main_pravy{
         display: none;
@@ -1709,5 +1710,17 @@ iframe{
 }
 
 .fg .clear {
+    display: none !important;
+}
+
+#prihlaseni table {
+    margin-left: auto;
+    margin-right: auto;
+    width: 100%;
+    max-width: 400px;
+}
+
+
+img[src="/img/req2.png"]{
     display: none !important;
 }
