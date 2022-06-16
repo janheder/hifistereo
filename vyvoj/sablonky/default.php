@@ -212,7 +212,7 @@ reklamni_okno($_GET['p']);
 
 <div class="obal_sedy">
 	<div class="clear" style="height: 40px;"></div>
-	<div class="holder2">	
+	<div class="holder2 --content-page">	
 		<div class="drobinka">
 			<?
 			// drobinka

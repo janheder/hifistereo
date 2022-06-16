@@ -89,7 +89,7 @@ $vyhledavani .= 'Nezadali jste žádné slovo k vyhledávání!';
 	$vyhledavani .= '<div class="clear"></div>';
 	$vyhledavani .= '</div>';
 	$vyhledavani .= '<div class="clear" style="height: 40px;"></div>';
-	$vyhledavani .= '<div class="holder4">';
+	$vyhledavani .= '<div class="holder4"><div class="product-grid">';
 
 //var_dump($vyhledavani);
 

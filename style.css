@@ -1646,12 +1646,15 @@ select{
 
 .form_inp{
     width: 100%;
+    padding-left: 15px;
 }
 
 .checkbox-field{
     display: flex;
     padding: 10px;
     border: 1px solid #e5e5e5;
+    align-items: center;
+    margin-bottom: 15px;
 }
 .checkbox-field label{
     padding-left: 15px;
@@ -1681,4 +1684,30 @@ select{
     .holder > .main_pravy{
         display: none;
     }
+}
+
+.sub_dk{
+    margin-top: 20px;
+}
+
+
+
+@media screen and (max-width: 767px){
+.holder2.--content-page table tr{
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 20px;
+}
+}
+
+iframe{
+    max-width: 100% !important;
+}
+
+.fg{
+    text-align: center;
+}
+
+.fg .clear {
+    display: none !important;
 }
