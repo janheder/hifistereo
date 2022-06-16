@@ -1434,6 +1434,8 @@ span.p_nadpisy {
     }  
     .poznamka_kosik{
         width: 100%;
+        margin: 0;
+    margin-bottom: 10px;
     }
     .poznamka_kosik + div{
         width: 100% !important;
@@ -1442,7 +1444,7 @@ span.p_nadpisy {
 
  form[name="pokladna_1"] table{
      width: 100% !important;
-     margin-bottom: 20px;
+     margin: 20px 0;
  }
 
  .sub_vyhledavani, .input_vyhledavani{
