@@ -1008,8 +1008,11 @@ span.p_nadpisy {
 
 
 @media screen and (max-width: 575px) {
-    .krok_na:last-child{
+    .krok_a:last-child, .krok_na:last-child{
         display: none;
+    }
+    .kroky_kosiku {
+        grid-template-columns: 1fr 1fr 1fr;
     }
     .kos_celkem > div{
         flex-direction: column;
@@ -1594,4 +1597,8 @@ select{
     .cart-buttons input:first-child{
         margin-bottom: 10px;
     }
+}
+
+.kos_box1 table tbody tr> td:nth-child(5) a{
+    flex-grow: 1;
 }
