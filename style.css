@@ -535,6 +535,13 @@ span.p_nadpisy {
         grid-gap: 20px;
         margin-bottom: 20px;
     }
+    .inp_n {
+        height: 52px;
+        line-height: 52px;
+    }
+    .inp_s1 {
+        height: 52px;
+    }
 }
 
 .ps_top {
