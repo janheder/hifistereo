@@ -690,12 +690,12 @@ private $slevova_skupina_zakaznika;
    $tabulka_kosik .= '<div class="clear" style="height: 30px;"></div></div>';	 
    
     	   
-   $tabulka_kosik .=  '<input type="button" class="sub_dk3"  title="pokračovat v nákupu" value="Pokračovat v nákupu"  style="float: left;" 
+   $tabulka_kosik .=  '<div class="cart-buttons"><input type="button" class="sub_dk3"  title="pokračovat v nákupu" value="Pokračovat v nákupu"  style="float: left;" 
    onclick="self.location.href=\'/\'" />'; 	
    
    $tabulka_kosik .=  '<input type="submit" class="sub_dk2"   title="Pokračovat v objednávce" value="Pokračovat v objednávce"  style="float: right;" />';
    
-   $tabulka_kosik .= '<div class="clear" style="height: 20px;"></div></form></div>';
+   $tabulka_kosik .= '</div><div class="clear" style="height: 20px;"></div></form></div>';
    
 
    }

@@ -1017,6 +1017,9 @@ span.p_nadpisy {
         justify-content: center;
         margin-bottom: 30px;
     }
+    .kos_celkem > div > span{
+        margin-bottom: 10px;  
+    }
 }
 
 
@@ -1577,4 +1580,18 @@ select{
     opacity: 1;
     pointer-events: auto;
 }
+}
+
+
+.cart-buttons{
+    display: flex;
+    justify-content: space-between;
+}
+@media screen and (max-width: 575px){
+    .cart-buttons{
+        flex-direction: column;
+    }
+    .cart-buttons input:first-child{
+        margin-bottom: 10px;
+    }
 }
