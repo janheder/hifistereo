@@ -146,7 +146,7 @@ reklamni_okno($_GET['p']);
 		</div>
 </div>
 
-
+<div id="backdrop"></div>
 <div class="top_pruh2">
 	<div class="top_pruh2_in">
 	<div id="navToggle"><span></span></div>

@@ -1535,3 +1535,26 @@ select{
     height: auto !important;
   line-height: 1.5 !important;
 }
+
+
+#backdrop {
+    background: rgba(0, 0, 0, 0.4);
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    z-index: 10;
+    backdrop-filter: blur(3px);
+    backface-visibility: hidden;
+    transition: 0.2s ease opacity;
+    display: flex;
+    opacity: 0;
+    pointer-events: none;
+}
+@media screen and (max-width: 991px){
+    body.--navActive #backdrop {
+    opacity: 1;
+    pointer-events: auto;
+}
+}
