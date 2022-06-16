@@ -854,7 +854,7 @@ span.p_nadpisy {
 
 .top_pruh2_logo a {
     display: flex;
-    flex-shrink: 0;
+    flex-shrink: 1;
 }
 
 .top_pruh2_text {
@@ -880,7 +880,7 @@ span.p_nadpisy {
 
     .top_pruh2_logo {
         flex-grow: 1;
-        padding-left: 20px;
+        padding-left: 10px;
     }
 
     .top_pruh2_in {
@@ -1457,7 +1457,7 @@ span.p_nadpisy {
 
     @media screen and (max-width: 575px){
         .bx-wrapper .bx-pager, .bx-wrapper .bx-controls-auto{
-            bottom: 0;
+            bottom: 5px;
         }
         .slider_uvodka_box_nadpis{
             max-height: 56px;
@@ -1723,4 +1723,9 @@ iframe{
 
 img[src="/img/req2.png"]{
     display: none !important;
+}
+
+#TB_closeAjaxWindow{
+    position: absolute;
+    right: 0;
 }

@@ -65,7 +65,15 @@ color: red;
 }
 
 
-
+@media screen and (max-width: 767px){
+	.obal
+{
+	display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+}
 
 </style>
 </head>

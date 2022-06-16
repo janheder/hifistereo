@@ -16,6 +16,7 @@ $Seo_keywords->GenerujKeywords();
 <meta name="MSSmartTagsPreventParsing" content="true" />
 <meta http-equiv="X-UA-Compatible" content="IE=EmulateIE9" />
 <meta http-equiv="imagetoolbar" content="no" />
+<meta content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=5" name="viewport">
 <title><? 
 $Seo_title = new Seo($_SESSION['menu_all'],$_GET['p']);
 $Seo_title->GenerujTitle();
@@ -32,6 +33,8 @@ $Seo_title->GenerujTitle();
 <script type="text/javascript" src="/js/jquery.fancybox-1.3.2.js"></script>
 <script type="text/javascript" src="/js/jquery.bxslider.min.js"></script>
 <link rel="shortcut icon" href="/favicon.ico" type="image/x-icon" />
+
+<link rel="stylesheet" href="https://janheder.github.io/hifistereo/style.css" type="text/css">
 <link rel="stylesheet" href="/css/cookieconsent.css">
     <script type="text/javascript" src="/js/cookieconsent.js" defer></script>
     <script type="text/javascript" src="/js/cookieconsent-init.js" defer></script>
@@ -150,7 +153,7 @@ reklamni_okno($_GET['p']);
 <div class="top_pruh2">
 	<div class="top_pruh2_in">
 	<div id="navToggle"><span></span></div>
-		<div class="top_pruh2_logo"><a href="/" title="<? echo __TITLE_LOGA__;?>"><img src="/img/logo.png" alt="logo" /></a><h1><? echo __TITLE_LOGA__;?></h1></div>
+		<div class="top_pruh2_logo"><a href="/" title="<? echo __TITLE_LOGA__;?>"><img src="/img/logo-new.png" alt="logo" /></a><h1><? echo __TITLE_LOGA__;?></h1></div>
 		<div class="top_pruh2_text">ŠPIČKOVÁ HUDEBNÍ TECHNIKA<br />PRO VŠECHNY FAJNŠMEKRY</div>
 		
 		<div class="top_pruh2_kosik" onclick="self.location.href='/kosik.html'">
@@ -432,5 +435,7 @@ $(window).scroll(function() {
 });
 
 </script>
+
+<script type="text/javascript" src="https://janheder.github.io/hifistereo/custom.js"></script>
 </body>
 </html>
