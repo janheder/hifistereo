@@ -914,7 +914,7 @@ private $slevova_skupina_zakaznika;
 	
 	   
 	   
-	   $ret .= '<div style="width: auto; text-align: center">
+	   $ret .= '<div style="width: auto; text-align: center" class="cart-buttons">
 	   <input type="button" name="but1" value="NÁKUP BEZ REGISTRACE" title="NÁKUP BEZ REGISTRACE" class="submit_but" onclick="self.location.href=\'/bez-registrace.html\'" />&nbsp;&nbsp;&nbsp;&nbsp;
 	   <input type="button" name="but2" value="NÁKUP S REGISTRACÍ" title="NÁKUP S REGISTRACÍ" class="submit_but" onclick="self.location.href=\'/registrace.html\'" />
 	   </div>';

@@ -313,7 +313,7 @@ value="'.$row_kontrola->reg_fak_psc.'" class="form_inp"/></td></tr>
 
 
 
-$uprava_t .= '<tr><td colspan="2" ><input name="nl"   type="checkbox" value="1" ';
+$uprava_t .= '<tr><td colspan="2" ><div class="checkbox-field"><input name="nl"   type="checkbox" value="1" ';
                             
                             $result_kontrola = mysql_query("SELECT id FROM newsletter WHERE email='".addslashes(trim($row_kontrola->eml))."'") or die(err(1));
 							if(mysql_num_rows($result_kontrola))
@@ -321,7 +321,7 @@ $uprava_t .= '<tr><td colspan="2" ><input name="nl"   type="checkbox" value="1" 
 								$uprava_t .= ' checked ';
 							}
                             
-                            $uprava_t .= '> '.__KOSIK_NL_TEXT__.'</td></tr>';
+                            $uprava_t .= '> <label>'.__KOSIK_NL_TEXT__.'</label></div></td></tr>';
 
 
 

@@ -517,7 +517,7 @@ $registrace_t .= '</td></tr>
 </td></tr>';
 $registrace_t .= '<tr><td colspan="2" >&nbsp;</td></tr>';
 
-$registrace_t .= '<tr><td colspan="2" ><input class="form-check__input" type="checkbox" name="nl" value="1"> '.__KOSIK_NL_TEXT__.'</td></tr>';
+$registrace_t .= '<tr><td colspan="2" ><div class="checkbox-field"><input class="form-check__input" type="checkbox" name="nl" value="1"> <label>'.__KOSIK_NL_TEXT__.'</label></div></td></tr>';
 
 $registrace_t .= '<tr><td colspan="2" ><input class="form-check__input" type="checkbox" name="souhlas_ou" value="1" required> '.__REGISTRACE_SOUHLAS_SE_ZPRAC_OS_UD__.'</td></tr>';
 

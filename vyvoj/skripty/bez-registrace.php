@@ -340,7 +340,7 @@ $registrace_t .= '</td></tr>
 
 $registrace_t .= '<tr><td colspan="2" >&nbsp;</td></tr>';
 
-$registrace_t .= '<tr><td colspan="2" ><input class="form-check__input" type="checkbox" name="nl" value="1"> '.__KOSIK_NL_TEXT__.'</td></tr>';
+$registrace_t .= '<tr><td colspan="2" ><div class="checkbox-field"><input class="form-check__input" type="checkbox" name="nl" value="1"> <label>'.__KOSIK_NL_TEXT__.'</label></div></td></tr>';
 $registrace_t .= '<tr><td colspan="2" >&nbsp;</td></tr>';
 $registrace_t .= '<tr><td colspan="2" >  '.__KOSIK_OSOBNI_UDAJE__.'</td></tr>';
 

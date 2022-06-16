@@ -1602,3 +1602,14 @@ select{
 .kos_box1 table tbody tr> td:nth-child(5) a{
     flex-grow: 1;
 }
+
+.form_inp{
+    width: 100%;
+}
+
+.checkbox-field{
+    display: flex;
+}
+.checkbox-field label{
+    padding-left: 15px;
+}
