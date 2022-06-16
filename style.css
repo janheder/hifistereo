@@ -224,6 +224,7 @@ ul.bxslider>li {
     }
     .box_nejprodavanejsi_nazev{
         font-size: 16px;
+        height: 40px;
     }
 }
 
@@ -608,6 +609,7 @@ span.p_nadpisy {
 @media screen and (max-width: 420px) {
     .submenu-wrap {
         grid-template-columns: 1fr;
+        grid-gap: 5px;
     }
 }
 .submenu_kat_box {
@@ -1513,15 +1515,20 @@ span.p_nadpisy {
     .kos_box1 table tbody tr> td:nth-child(3) img:nth-child(2){
     margin-top: -13px;
     }
-    .under-filter{
-        flex-direction: column;
-    }
+
    .strankovani_kategorie{
         flex-wrap: wrap;
     justify-content: center;
     }
 }
-
+@media screen and (max-width: 991px){
+    .under-filter{
+        flex-direction: column;
+    }
+    .under-filter .strankovani_kategorie{
+        margin-top: 10px;
+    }
+}
 
 select{
     max-width: 90vw;
