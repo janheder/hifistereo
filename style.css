@@ -206,6 +206,16 @@ ul.bxslider>li {
         grid-template-columns: 1fr;
         grid-gap: 10px;
     }
+    .box_a_h {
+        line-height: 56px;
+        height: 56px;
+    }
+    
+    .box_a {
+        line-height: 56px;
+        height: 56px;
+    }
+    
 }
 
 
@@ -1124,6 +1134,7 @@ span.p_nadpisy {
   .kos_celkem form tr > td:last-child{
     white-space: nowrap;
     text-align: right;
+    padding-left: 10px;
   }
   .kos_celkem > div{
     margin: 20px 0;
@@ -1255,7 +1266,12 @@ span.p_nadpisy {
     background-color: #353535;
     padding: 20px;
 }
-
+.prihlas_okno a{
+    display: flex;
+}
+.prihlas_okno br{
+    display: none;
+}
 @media screen and (max-width: 991px) {
     .slider_uvodka_box {
       height: 100%;
@@ -1339,14 +1355,21 @@ span.p_nadpisy {
     }
     
     .detail_foto > div a{
-      padding-bottom: 0;
+        padding-bottom: 0;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        height: 100%;
+    }
+    .detail_foto > div a img{
+        max-height: 100%;
     }
     .detail_foto > div.clear{
       border: 0;
     }
     @media screen and (max-width: 575px){
     .detail_foto > .foto_male {
-       
+        padding: 5px;
       height: 80px;
     }
       .product-cta {
@@ -1403,7 +1426,9 @@ span.p_nadpisy {
     .det_box_sklad {
         flex-wrap: wrap;
         height: auto;
-        padding-bottom: 20px;
+        padding: 20px;
+        padding-top: 0px;
+    margin: 0;
     }
     .ps_top > div{
       line-height: 1;
@@ -1526,7 +1551,7 @@ span.p_nadpisy {
         flex-direction: column;
     }
     .under-filter .strankovani_kategorie{
-        margin-top: 10px;
+        margin-top: 10px !important;
     }
 }
 
@@ -1616,7 +1641,15 @@ select{
 
 .checkbox-field{
     display: flex;
+    padding: 10px;
+    border: 1px solid #e5e5e5;
 }
 .checkbox-field label{
     padding-left: 15px;
+}
+
+
+.holder > .holder{
+    padding-right: 0px !important;
+    padding-left: 0px !important;
 }
