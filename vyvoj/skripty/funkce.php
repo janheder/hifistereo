@@ -1629,9 +1629,9 @@ function detail_produtku($id_p)
 	 <div class="detail_box_pravy_obal_in" >
 	 <div class="clear" style="height: 10px;"></div>
 	 <h1>'.stripslashes($row_n->nazev).'</h1>
-	 <div class="clear" style="height: 10px;"></div>
-	 <div style="float: left;"><span class="seda">Katalogové číslo:</span> <b>'.$row_n->kat_cislo.'</b></div>
-	 <div style="float: left; margin-left: 30px;"><span class="seda">Výrobce:</span> <b>'.$row_n->vyrobce.'</b></div>
+	 <div class="clear" style="height: 10px;"></div><div class="under-title">
+	 <div><span class="seda">Katalogové číslo:</span> <b>'.$row_n->kat_cislo.'</b></div>
+	 <div><span class="seda">Výrobce:</span> <b>'.$row_n->vyrobce.'</b></div></div>
 	 <div class="clear" style="height: 20px;"></div>
 	 <span class="product-desc">'.stripslashes($row_n->popis).'</span>
 	 <div class="clear" style="height: 5px;"></div>

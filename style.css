@@ -1400,6 +1400,7 @@ span.p_nadpisy {
     }
       .product-cta {
         flex-direction: column;
+margin-bottom: 0;
       }
       .product-cta form{
           padding-left: 0;
