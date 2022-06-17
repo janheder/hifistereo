@@ -1685,7 +1685,7 @@ select{
 }
 
 .holder > .holder3{
-    width: 70%;
+    width: calc(70% - 20px);
     background: white;
     margin-top: 20px;
     border: solid 1px #dedede;
@@ -1798,4 +1798,12 @@ img[src="/img/req2.png"]{
     }
     .modal-buttons a{
         margin: 5px;
+    }
+
+
+    .main_pravy .aktuality_pravy_nadpis{
+        margin-bottom: 20px;
+    }
+    .main_pravy .nahledy_produktu{
+        margin-bottom: 20px;
     }
