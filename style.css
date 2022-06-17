@@ -1719,7 +1719,9 @@ select{
     margin-top: 20px;
 }
 
-
+.autor_zdroj + div + .sub_dk{
+    margin-bottom:10px;
+}
 
 @media screen and (max-width: 767px){
 .holder2.--content-page table tr{
