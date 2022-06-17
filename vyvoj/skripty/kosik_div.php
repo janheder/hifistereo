@@ -36,6 +36,7 @@ padding-top: 0px;
 font-size: 12px; 
 font-family: Arial, Tahoma, Verdana;
 color: #626262;	
+padding-top: 30px;
 }
 
 a:link, a:visited
@@ -74,7 +75,24 @@ color: red;
 .modal-buttons a{
 	margin: 5px;
 }
-
+.obal{
+  
+  display: flex;
+	  flex-wrap: wrap;
+  }
+  .modal-img{
+	width: 25%;
+  }
+  .modal-img img{
+	  max-width: 100%;
+  }
+  .modal-side{
+	
+  width: 75%;
+  }
+  .modal-buttons{
+	width: 100%;
+  }
 @media screen and (max-width: 620px){
 	.obal
 {
@@ -82,11 +100,19 @@ color: red;
     flex-direction: column;
     align-items: center;
     justify-content: center;
+	padding-top: 5px;
 }
 .modal-description{
 	display: none;
 }
-
+.modal-img{
+	width: 100%;
+	text-align: center;
+  }
+  .modal-side{
+	text-align: center;
+  width: 100%;
+  }
 }
 
 </style>
@@ -135,12 +161,12 @@ $cena_db = 'cena_'.addslashes(__CENOVA_SKUPINA_SESS__);
   
   
 
-echo '<div style="float: left; width: 220px; min-height: 100px; text-align: center;">';
+echo '<div class="modal-img">';
 echo '<img src="'.__URL2__.'/img_produkty/stredni/'.$row->ONAZ.'" />';
 echo '</div>';
 	
   
-echo '<div style="float: right; width: 350px;">';  
+echo '<div class="modal-side">';  
 echo '<div style="width: auto; height: 40px; line-height: 100%; font-size: 20px; padding-left: 15px; background-color: #ffffff">
 <b style="font-size: 24px; color: #000000;">'.stripslashes($row->nazev).'</b></div>';
 echo '<div class="modal-description"><div style="width: auto; line-height: 1.5; font-size: 14px; padding-left: 15px; background-color: #ffffff; border-bottom: solid 1px #efefef;">
@@ -157,7 +183,7 @@ echo '</div></div>';
 
 
 
-echo "<div class=\"modal-buttons\" style=\"width: auto; padding-top: 20px;\">";
+echo "<div class=\"modal-buttons\">";
 echo "<a href=\"/kosik.html\" target=\"_parent\"><img src=\"/img/pokracovat3.png\" style=\"float: right; border: 0;\"></a>
 <a href=\"#\" onclick=\"self.parent.tb_remove();\"><img src=\"/img/dk2.png\" style=\"float: left; border: 0;\"></a>";
 echo "</div>";	
