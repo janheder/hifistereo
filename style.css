@@ -972,12 +972,24 @@ span.p_nadpisy {
     grid-template-columns: 1fr 1fr 1fr;
     grid-gap: 20px;
 }
-
+@media screen and (max-width: 991px) {
+    .nahled_obal_wrap {
+        grid-template-columns: 1fr 1fr;
+        grid-gap: 10px;
+    } 
+}
+@media screen and (max-width: 575px) {
+    .nahled_obal_wrap {
+        grid-template-columns: 1fr;
+        grid-gap: 5px;
+    } 
+}
 .nahled_obal_dp {
     margin: 0;
     display: flex;
     align-items: center;
     padding: 15px;
+    width: 100%;
 }
 
 .nahled_obal_dp_foto {
@@ -996,6 +1008,7 @@ span.p_nadpisy {
 
 .nahled_obal_dp_nadpis {
     font-size: 22px;
+    overflow: hidden;
 }
 
 .kroky_kosiku {
