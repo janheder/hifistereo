@@ -1819,8 +1819,26 @@ img[src="/img/req2.png"]{
 
     .kos_celkem_title{
         flex-grow: 1 !important;
+        padding-right: 20px;
+        align-items: center;
+        display: flex;
+        line-height: 1;
+        justify-content: flex-end;
     }
+    
 
     .box_rek_kosik .cara{
         margin-bottom: 10px;
+    }
+
+    .kos_celkem_in.--krok3{
+        flex-wrap: wrap
+    }
+    .kos_celkem_in.--krok3 span:last-child{
+        width: 100%;
+    justify-content: flex-end;
+    }
+
+    .kos_celkem_in.--krok3  #js_cena{
+        padding-right: 10px;
     }
