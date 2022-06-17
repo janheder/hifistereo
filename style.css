@@ -1883,3 +1883,20 @@ img[src="/img/req2.png"]{
 .cart-buttons .sub_dk3, .cart-buttons .sub_dk2{
     margin: 5px;
 }
+
+.aktuality_box_in2{
+    display: flex;
+    align-items: center;
+  }
+  .aktuality_box_in2 + div + .cara{
+    margin-top: 10px;
+    margin-bottom: 15px;
+  }
+  .ak_uvod_nadpis_obal2{
+    width: auto;
+    float: none;
+    padding-left: 20px;
+  }
+  .ak_uvod_obr2{
+    flex-shrink: 0;
+  }
