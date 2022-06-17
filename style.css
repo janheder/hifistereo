@@ -1492,6 +1492,10 @@ margin-bottom: 0;
             font-size: 22px;
         }
         .aktuality_foot_archiv{display: none;}
+
+        .product-cta p img{
+            left: 40px;
+        }
       }
 
 
@@ -1903,4 +1907,8 @@ img[src="/img/req2.png"]{
   }
   .ak_uvod_obr2{
     flex-shrink: 0;
+  }
+
+  .product-cta form > p span{
+    padding-left: 20px;
   }

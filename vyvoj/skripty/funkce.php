@@ -1698,7 +1698,7 @@ function detail_produtku($id_p)
 		  $ret_pr .= '<form id="do_kosiku_'.$row_n->id.'" method="post" action="" style="float: right; margin-top: 30px;" ><p>
 				 <input type="hidden" name="id_zbozi" value="'.$row_n->id.'" />
 				 <input type="text" name="pocet" value="1" class="input_detail" id="pocet_ks_'.$row_n->id.'" /><img src="/img/tl_nahoru.png" alt="+" style="position: absolute; margin-left: 0px; 
-				 margin-top: 11px; cursor: pointer;" onclick="pridej2(\'pocet_ks_'.$row_n->id.'\');" /><img src="/img/tl_dolu.png" alt="-" style="position: absolute; margin-top: 24px; margin-left: 0px; cursor: pointer;" onclick="uber2(\'pocet_ks_'.$row_n->id.'\');" /> <img src="/img/blank.gif" style="width: 10px; height: 25px;" alt=""  />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Ks &nbsp;&nbsp;&nbsp;
+				 margin-top: 11px; cursor: pointer;" onclick="pridej2(\'pocet_ks_'.$row_n->id.'\');" /><img src="/img/tl_dolu.png" alt="-" style="position: absolute; margin-top: 24px; margin-left: 0px; cursor: pointer;" onclick="uber2(\'pocet_ks_'.$row_n->id.'\');" /> <img src="/img/blank.gif" style="width: 10px; height: 25px;" alt=""  /><span>Ks</span>
 				 <input type="submit" name="objednat" value="Do košíku"  title="do košíku" class="sub_dk" /></p>
 				 </form>';
 	  
