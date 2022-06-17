@@ -1842,7 +1842,8 @@ img[src="/img/req2.png"]{
     }
 
     .kos_celkem_in.--krok3{
-        flex-wrap: wrap
+        flex-wrap: wrap;
+        flex-direction: row;
     }
     .kos_celkem_in.--krok3 span:last-child{
         width: 100%;
@@ -1865,3 +1866,16 @@ img[src="/img/req2.png"]{
         line-height: 1.2;
     }
     }
+
+
+@media screen and (max-width: 575px){
+    .kos_celkem.--krok1 > div > span{
+        display: none;
+    }
+    .kos_celkem.--krok1 .kos_celkem_in{
+        width: 100%;
+        border-bottom: 1px solid #e5e5e5;
+        padding-bottom: 20px;
+        margin-bottom: 10px;
+    }
+}

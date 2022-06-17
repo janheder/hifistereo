@@ -331,7 +331,7 @@ private $slevova_skupina_zakaznika;
 
     
     $tabulka_kosik .= '<div class="clear" style="height: 20px;"></div>
-    <div class="kos_celkem"><div>
+    <div class="kos_celkem --krok1"><div>
 	<span>
     <img src="/img/auto2.png" alt="doprava zdarma" style="float: left;" />
     <div style="float: left; margin-top: 0px;"><span style="font-size: 18px; color: #1f1f1f;  font-weight: bold;">Doprava zdarma</span><br />
