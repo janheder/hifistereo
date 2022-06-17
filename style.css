@@ -1776,10 +1776,12 @@ img[src="/img/req2.png"]{
     }
 
 
-    .kos_celkem_in{
-        justify-content: flex-start;
+    .kos_celkem .kos_celkem_in{
+        justify-content: flex-start !important;
     }
-
+    .kos_celkem .kos_celkem_in > span{
+        flex-grow: 0 !important;
+    }
 
     .kos_celkem > .kos_celkem-content > div{
         display: flex;
@@ -1806,4 +1808,10 @@ img[src="/img/req2.png"]{
     }
     .main_pravy .nahledy_produktu{
         margin-bottom: 20px;
+    }
+
+
+    form[name="reg"]{
+        max-width: 600px;
+        margin: 0 auto;
     }

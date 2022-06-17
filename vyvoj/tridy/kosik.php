@@ -348,7 +348,7 @@ private $slevova_skupina_zakaznika;
    
    
           // doprava
-   $tabulka_kosik .= '<span style="font-size: 28px; font-weight: bold; color: #FFD631;">1.</span> <span style="font-size: 24px; font-weight: 500; color: #1f1f1f;">ZVOLTE ZPŮSOB DOPRAVY</span>';
+   $tabulka_kosik .= '<span style="font-size: 24px; font-weight: 500; color: #1f1f1f;"><span style="font-size: 28px; font-weight: bold; color: #FFD631;">1. </span>ZVOLTE ZPŮSOB DOPRAVY</span>';
    $tabulka_kosik .= '<div class="clear" style="height: 20px;"></div>';
    
     	   // nejdrive musime zjistit zda se v kosiku nachazi pouze produkt s atributem specialni_doprava
