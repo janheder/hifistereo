@@ -735,6 +735,7 @@ span.p_nadpisy {
 
 .heading-bestseller {
     margin-top: 20px;
+    height: auto;
 }
 
 #top-link-block {
@@ -1185,6 +1186,7 @@ span.p_nadpisy {
   }
   .poznamka_kosik{
     margin-right: 20px;
+    margin-left: 0;
   }
   
   .div_kos_text{
@@ -1782,4 +1784,8 @@ img[src="/img/req2.png"]{
     .kos_celkem > .kos_celkem-content > div{
         display: flex;
         flex-direction: column;
+    }
+
+    .box_nejprodavanejsi_obal_text .nahledy_produktu_cena{
+        margin-top: 0;
     }
