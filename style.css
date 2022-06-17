@@ -1609,7 +1609,8 @@ select{
   .nahledy_produktu_cena{
     margin-right: 10px;
     padding-top: 10px;
-  }
+    margin-top: 20px;
+}
 
   #kosik_p{
     height: auto !important;
