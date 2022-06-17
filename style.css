@@ -1766,9 +1766,10 @@ img[src="/img/req2.png"]{
 
 
 @media screen and (max-width: 767px){
-    .kos_celkem > div.box_rek_kosik {
+    .kos_celkem  .box_rek_kosik_wrap div.box_rek_kosik {
         width:100%;
-  
+        margin: 0;
+        margin-bottom: 20px;
     }
     .box_rek_kosik_wrap{
         flex-direction: column;
@@ -1818,4 +1819,8 @@ img[src="/img/req2.png"]{
 
     .kos_celkem_title{
         flex-grow: 1 !important;
+    }
+
+    .box_rek_kosik .cara{
+        margin-bottom: 10px;
     }

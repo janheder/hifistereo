@@ -759,8 +759,8 @@ private $slevova_skupina_zakaznika;
    
    // rekapitulace 3 x box
    $tabulka_kosik .= '<div class="box_rek_kosik_wrap"><div class="box_rek_kosik">';
-   $tabulka_kosik .= '<span style="font-size: 24px; color: #FFD631; font-weight: bold;">1.</span> 
-   <span style="font-size: 24px; color: #1f1f1f; font-weight: 500;">Osobní údaje</span>';
+   $tabulka_kosik .= '<span style="font-size: 24px; color: #1f1f1f; font-weight: 500; padding-bottom: 10px;"><span style="font-size: 24px; color: #FFD631; font-weight: bold;">1.</span> 
+   Osobní údaje</span>';
    $tabulka_kosik .= '<div class="clear" style="height: 10px;"></div>
    <div class="cara"></div>
    <div class="clear" style="height: 10px;"></div>';
@@ -788,8 +788,8 @@ private $slevova_skupina_zakaznika;
    $tabulka_kosik .= '</div>';
    
    $tabulka_kosik .= '<div class="box_rek_kosik">';
-   $tabulka_kosik .= '<span style="font-size: 24px; color: #FFD631; font-weight: bold;">2.</span> 
-   <span style="font-size: 24px; color: #1f1f1f;  font-weight: 500;">Fakturační adresa</span>';
+   $tabulka_kosik .= '<span style="font-size: 24px; color: #1f1f1f; font-weight: 500; padding-bottom: 10px;"><span style="font-size: 24px; color: #FFD631; font-weight: bold;">2.</span> 
+   Fakturační adresa</span>';
    $tabulka_kosik .= '<div class="clear" style="height: 10px;"></div>
    <div class="cara"></div>
    <div class="clear" style="height: 10px;"></div>';
@@ -828,8 +828,8 @@ private $slevova_skupina_zakaznika;
    
    
    $tabulka_kosik .= '<div class="box_rek_kosik" style="margin-right: 0px;">';
-   $tabulka_kosik .= '<span style="font-size: 24px; color: #FFD631; font-weight: bold;">3.</span> 
-   <span style="font-size: 24px; color: #1f1f1f; font-weight: 500;">Dodací adresa</span>';
+   $tabulka_kosik .= '<span style="font-size: 24px; color: #1f1f1f; font-weight: 500; padding-bottom: 10px;"><span style="font-size: 24px; color: #FFD631; font-weight: bold;">3.</span> 
+   Dodací adresa</span>';
    $tabulka_kosik .= '<div class="clear" style="height: 10px;"></div>
    <div class="cara"></div>
    <div class="clear" style="height: 10px;"></div>';
@@ -869,10 +869,10 @@ private $slevova_skupina_zakaznika;
    $tabulka_kosik .= '</div></div>';
    
    
-   $tabulka_kosik .= '<div class="clear" style="height: 20px;"></div> <form name="pokladna_1" method="post" action="/kosik.html?krok=4" >  <input class="form-check__input" type="checkbox" name="nesouhlas_heureka" value="1"> '.__KOSIK_HEUREKA_TEXT__.' <br />
+   $tabulka_kosik .= '<div class="clear" style="height: 20px;"></div> <form name="pokladna_1" method="post" action="/kosik.html?krok=4" > <div class="checkbox-field"> <input class="form-check__input" type="checkbox" name="nesouhlas_heureka" value="1"> <label>'.__KOSIK_HEUREKA_TEXT__.' </label></div>
    
-   <input name="souhlas" id="osobni-udaje" type="checkbox" value="1" required>
-                            <span>'.__KOSIK_SOUHLAS_OBCH_PODM__.'</span><br />';
+   <div class="checkbox-field"><input name="souhlas" id="osobni-udaje" type="checkbox" value="1" required>
+                            <label>'.__KOSIK_SOUHLAS_OBCH_PODM__.'</label></div>';
    
    
    }
