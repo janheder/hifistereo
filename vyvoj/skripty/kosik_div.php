@@ -63,7 +63,17 @@ border-bottom: solid 1px #D5D5D5;
 {
 color: red;	
 }
-
+.modal-buttons{
+	width: auto;
+    padding-top: 20px;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+}
+.modal-buttons a{
+	margin: 5px;
+}
 
 @media screen and (max-width: 620px){
 	.obal
@@ -73,6 +83,10 @@ color: red;
     align-items: center;
     justify-content: center;
 }
+.modal-description{
+	display: none;
+}
+
 }
 
 </style>
@@ -126,10 +140,10 @@ echo '<img src="'.__URL2__.'/img_produkty/stredni/'.$row->ONAZ.'" />';
 echo '</div>';
 	
   
-echo '<div style="float: right; width: 350px; min-height: 100px;">';  
+echo '<div style="float: right; width: 350px;">';  
 echo '<div style="width: auto; height: 40px; line-height: 100%; font-size: 20px; padding-left: 15px; background-color: #ffffff">
 <b style="font-size: 24px; color: #000000;">'.stripslashes($row->nazev).'</b></div>';
-echo '<div style="width: auto; height: 40px; line-height: 40px; font-size: 14px; padding-left: 15px; background-color: #ffffff; border-bottom: solid 1px #efefef;">
+echo '<div class="modal-description"><div style="width: auto; line-height: 1.5; font-size: 14px; padding-left: 15px; background-color: #ffffff; border-bottom: solid 1px #efefef;">
 <span style="color: #000000;">Katalogové číslo:</span> '.stripslashes($row->kat_cislo).'</div>';
 echo '<div style="width: auto; height: 40px; line-height: 40px; font-size: 14px; padding-left: 15px; background-color: #ffffff; border-bottom: solid 1px #efefef;">
 <span style="color: #000000;">Výrobce:</span> '.stripslashes($row->vyrobce).'</div>';
@@ -139,10 +153,9 @@ echo '<div style="width: auto; height: 40px; line-height: 40px; font-size: 14px;
 echo '<div style="width: auto; height: 40px; line-height: 40px; font-size: 14px; padding-left: 15px; background-color: #ffffff; border-bottom: solid 1px #efefef;">
 <span style="color: #000000;">Cena:</span> 
 <span style="font-size: 20px; font-weight: bold; color: #000000;">'.$cena_s_dph.' '.__MENA__.'</span></div>';
-echo '</div>';
+echo '</div></div>';
 
 
-echo '<div style="clear: both; width: auto; height: 10px;"></div>';
 
 echo "<div class=\"modal-buttons\" style=\"width: auto; padding-top: 20px;\">";
 echo "<a href=\"/kosik.html\" target=\"_parent\"><img src=\"/img/pokracovat3.png\" style=\"float: right; border: 0;\"></a>

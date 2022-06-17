@@ -1857,3 +1857,11 @@ img[src="/img/req2.png"]{
         margin: 0 auto;
     float: none !important;
     }
+
+    @media screen and (max-width: 620px){
+
+    #TB_ajaxWindowTitle{
+        font-size: 24px;
+        line-height: 1.2;
+    }
+    }
