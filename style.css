@@ -1912,3 +1912,7 @@ img[src="/img/req2.png"]{
   .product-cta form > p span{
     padding-left: 20px;
   }
+
+  img[src="/img/req.gif"]{
+      display: none !important;
+  }
