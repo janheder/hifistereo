@@ -65,7 +65,7 @@ color: red;
 }
 
 
-@media screen and (max-width: 767px){
+@media screen and (max-width: 620px){
 	.obal
 {
 	display: flex;
@@ -144,7 +144,7 @@ echo '</div>';
 
 echo '<div style="clear: both; width: auto; height: 10px;"></div>';
 
-echo "<div style=\"width: auto; padding-top: 20px;\">";
+echo "<div class=\"modal-buttons\" style=\"width: auto; padding-top: 20px;\">";
 echo "<a href=\"/kosik.html\" target=\"_parent\"><img src=\"/img/pokracovat3.png\" style=\"float: right; border: 0;\"></a>
 <a href=\"#\" onclick=\"self.parent.tb_remove();\"><img src=\"/img/dk2.png\" style=\"float: left; border: 0;\"></a>";
 echo "</div>";	

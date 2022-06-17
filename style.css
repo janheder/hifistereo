@@ -1789,3 +1789,13 @@ img[src="/img/req2.png"]{
     .box_nejprodavanejsi_obal_text .nahledy_produktu_cena{
         margin-top: 0;
     }
+
+    .modal-buttons{
+        display: flex;
+        flex-wrap: wrap;
+        align-items: center;
+        justify-content: center;
+    }
+    .modal-buttons a{
+        margin: 5px;
+    }
