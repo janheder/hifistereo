@@ -950,7 +950,9 @@ span.p_nadpisy {
     display: flex;
     justify-content: space-between;
 }
-
+.det_box_sklad > div{
+    height: auto !important;
+}
 .detail_box_pravy_obal_cerny {
     padding: 40px 20px;
 }
@@ -1743,3 +1745,28 @@ img[src="/img/req2.png"]{
     position: absolute;
     right: 0;
 }
+
+.holder3 .ak_uvod_foto {
+    margin-bottom: 20px;
+}
+
+.kos_celkem {
+    display: flex;
+    flex-direction: column;
+}
+
+.kos_celkem > div.box_rek_kosik {
+    display: flex;
+    width: 33%;
+    flex-direction: column;
+    height: auto;
+}
+
+
+@media screen and (max-width: 767px){
+    .kos_celkem > div.box_rek_kosik {
+        width:100%;
+  
+    }
+    
+    }

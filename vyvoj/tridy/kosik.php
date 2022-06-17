@@ -291,8 +291,8 @@ private $slevova_skupina_zakaznika;
 	       }
 	       
             $tabulka_kosik .= ' <img src="/img/blank.gif" style="width: 10px; height: 25px;" />Ks</td>
-           <td style="width: 15%;">&nbsp;&nbsp;<span style="color: #222222;">'.$cena_ks.' '.__MENA__.'</span></td>
-           <td style="width: 15%;">&nbsp;&nbsp;<span style="font-weight: bold; color: #222222;" id="cena_row_'.$row->id.'">'.($cena_ks * $pocet_ks).'</span>
+           <td style="width: 15%;"><span style="color: #222222;">'.$cena_ks.' '.__MENA__.'</span></td>
+           <td style="width: 15%;"><span style="font-weight: bold; color: #222222;" id="cena_row_'.$row->id.'">'.($cena_ks * $pocet_ks).'</span>
             <span style="font-weight: bold; color: #222222;">'.__MENA__.'</span>';
            
            if($_GET['krok']==1)
@@ -348,7 +348,7 @@ private $slevova_skupina_zakaznika;
    
    
           // doprava
-   $tabulka_kosik .= '&nbsp;&nbsp;&nbsp;&nbsp;<span style="font-size: 28px; font-weight: bold; color: #FFD631;">1.</span> <span style="font-size: 24px; font-weight: 500; color: #1f1f1f;">ZVOLTE ZPŮSOB DOPRAVY</span>';
+   $tabulka_kosik .= '<span style="font-size: 28px; font-weight: bold; color: #FFD631;">1.</span> <span style="font-size: 24px; font-weight: 500; color: #1f1f1f;">ZVOLTE ZPŮSOB DOPRAVY</span>';
    $tabulka_kosik .= '<div class="clear" style="height: 20px;"></div>';
    
     	   // nejdrive musime zjistit zda se v kosiku nachazi pouze produkt s atributem specialni_doprava
@@ -598,7 +598,7 @@ private $slevova_skupina_zakaznika;
 				
    
    // platba
-   $tabulka_kosik .= '&nbsp;&nbsp;&nbsp;&nbsp;<span style="font-size: 28px; font-weight: bold; color: #FFD631;">2.</span> <span style="font-size: 24px; font-weight: 500; color: #1f1f1f;">ZVOLTE ZPŮSOB PLATBY</span>';
+   $tabulka_kosik .= '<span style="font-size: 28px; font-weight: bold; color: #FFD631;">2.</span> <span style="font-size: 24px; font-weight: 500; color: #1f1f1f;">ZVOLTE ZPŮSOB PLATBY</span>';
    $tabulka_kosik .= '<div class="clear" style="height: 20px;"></div>';
    
     	   $query_platba = MySQL_Query("SELECT * FROM platba WHERE aktivni=1  ") or die(err(1));
@@ -682,7 +682,7 @@ private $slevova_skupina_zakaznika;
 
     	   
     // poznamka
-   $tabulka_kosik .= '<div class="poznamka-wrap">&nbsp;&nbsp;&nbsp;&nbsp;<span style="font-size: 28px; font-weight: bold; color: #FFD631;">3.</span> <span style="font-size: 24px;  font-weight: 500; color: #1f1f1f;">POZNÁMKA</span>';
+   $tabulka_kosik .= '<div class="poznamka-wrap"><span style="font-size: 28px; font-weight: bold; color: #FFD631;">3.</span> <span style="font-size: 24px;  font-weight: 500; color: #1f1f1f;">POZNÁMKA</span>';
    $tabulka_kosik .= '<div class="clear" style="height: 20px;"></div>';	 
    $tabulka_kosik .= '<div class="poznamka-form"><textarea name="poznamka" class="poznamka_kosik">'.strip_tags($_SESSION['poznamka']).'</textarea>';
    $tabulka_kosik .= '<div style="float: right; width: 500px;">Chcete nám sdělit ještě nějakou důležitou zprávu k vaší objednávce?<br />Využijte prosím, tohoto formuláře.
