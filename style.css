@@ -1815,3 +1815,7 @@ img[src="/img/req2.png"]{
         max-width: 600px;
         margin: 0 auto;
     }
+
+    .kos_celkem_title{
+        flex-grow: 1 !important;
+    }
