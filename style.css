@@ -1403,7 +1403,16 @@ span.p_nadpisy {
       }
       .product-cta form{
           padding-left: 0;
-          padding-top: 20px;
+          padding-top: 0px;
+      }
+
+      .product-cta> div{
+          order: 2;
+          margin-top: 20px;
+          margin-bottom: 10px;
+      }
+      .produkt-kalkulacka{
+          text-align: center !important;
       }
     }
     
@@ -1841,4 +1850,9 @@ img[src="/img/req2.png"]{
 
     .kos_celkem_in.--krok3  #js_cena{
         padding-right: 10px;
+    }
+
+    .sub_dk3{
+        margin: 0 auto;
+    float: none !important;
     }
