@@ -1879,3 +1879,7 @@ img[src="/img/req2.png"]{
         margin-bottom: 10px;
     }
 }
+
+.cart-buttons .sub_dk3, .cart-buttons .sub_dk2{
+    margin: 5px;
+}

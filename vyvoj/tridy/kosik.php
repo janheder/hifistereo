@@ -987,12 +987,12 @@ private $slevova_skupina_zakaznika;
 		  
 		  
 		    	   
-		  $ret .=  '<input type="button" class="sub_dk3"  title="pokračovat v nákupu" value="Pokračovat v nákupu"  style="float: left;" 
+		  $ret .=  '<div class="cart-buttons"><input type="button" class="sub_dk3"  title="pokračovat v nákupu" value="Pokračovat v nákupu"  style="float: left;" 
 					onclick="self.location.href=\'/\'" />'; 	
    
 		  $ret .=  '<input type="submit" class="sub_dk2"   title="Odeslat objednávku" value="Odeslat objednávku"  style="float: right;" />';
 
-		  $ret .=  '</form>'; 	
+		  $ret .=  '</div></form>'; 	
 		  
 		  
 		 }
