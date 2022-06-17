@@ -729,12 +729,12 @@ private $slevova_skupina_zakaznika;
 
     $tabulka_kosik .= '<div class="clear" style="height: 20px;"></div>
     <div class="kos_celkem">
-    <div style="float: left; margin-top: 0px;"><span style="font-size: 18px; color: #1f1f1f;  font-weight: 500;">Způsob platby:</span>
+    <div class="kos_celkem-content"><div style="float: left; margin-top: 0px;"><span style="font-size: 18px; color: #1f1f1f;  font-weight: 500;">Způsob platby:</span>
     <span style="font-size: 18px;"> '.$row_platba->text.' <b>'.$row_platba->cena.' '.__MENA__.'</b></span><br />
     <span style="font-size: 18px; color: #1f1f1f; font-weight: 500;">Způsob dopravy:</span>
     <span style="font-size: 18px; "> '.$row_doprava->text.' <b>'.$row_doprava->cena.' '.__MENA__.'</b></span>
      <br />
-    </div>
+    </div></div>
     
     
     <div class="kos_celkem_in">Celkem: &nbsp;&nbsp;<span style="font-size: 34px; color: #1f1f1f; font-weight: bold;" id="js_cena">'.($cena_final + $row_platba->cena + $row_doprava->cena).'</span> 
@@ -754,7 +754,7 @@ private $slevova_skupina_zakaznika;
    $row_zakaznik = mysql_fetch_object($query_zakaznik);
    
    // rekapitulace 3 x box
-   $tabulka_kosik .= '<div class="box_rek_kosik">';
+   $tabulka_kosik .= '<div class="box_rek_kosik_wrap"><div class="box_rek_kosik">';
    $tabulka_kosik .= '<span style="font-size: 24px; color: #FFD631; font-weight: bold;">1.</span> 
    <span style="font-size: 24px; color: #1f1f1f; font-weight: 500;">Osobní údaje</span>';
    $tabulka_kosik .= '<div class="clear" style="height: 10px;"></div>
@@ -862,7 +862,7 @@ private $slevova_skupina_zakaznika;
 		$tabulka_kosik .= ' Stejná jako fakturační';
 	}
    
-   $tabulka_kosik .= '</div>';
+   $tabulka_kosik .= '</div></div>';
    
    
    $tabulka_kosik .= '<div class="clear" style="height: 20px;"></div> <form name="pokladna_1" method="post" action="/kosik.html?krok=4" >  <input class="form-check__input" type="checkbox" name="nesouhlas_heureka" value="1"> '.__KOSIK_HEUREKA_TEXT__.' <br />

@@ -1755,7 +1755,7 @@ img[src="/img/req2.png"]{
     flex-direction: column;
 }
 
-.kos_celkem > div.box_rek_kosik {
+.kos_celkem  .box_rek_kosik_wrap div.box_rek_kosik {
     display: flex;
     width: 33%;
     flex-direction: column;
@@ -1768,5 +1768,18 @@ img[src="/img/req2.png"]{
         width:100%;
   
     }
-    
+    .box_rek_kosik_wrap{
+        flex-direction: column;
+    }
+    }
+
+
+    .kos_celkem_in{
+        justify-content: flex-start;
+    }
+
+
+    .kos_celkem > .kos_celkem-content > div{
+        display: flex;
+        flex-direction: column;
     }
