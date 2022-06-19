@@ -1828,7 +1828,7 @@ img[src="/img/req2.png"]{
     }
 
 
-    form[name="reg"]{
+    form[id="prihlaseni"]{
         max-width: 600px;
         margin: 0 auto;
     }
@@ -1916,3 +1916,19 @@ img[src="/img/req2.png"]{
   img[src="/img/req.gif"]{
       display: none !important;
   }
+
+
+  .input_detail2{
+    height: 32px;
+  }
+  
+  .kos_celkem.--krok1 > div{
+    margin-bottom: 40px;
+  }
+  form[name="pokladna_1"] table{
+    margin-bottom: 40px;
+  }
+  .kos_celkem form tr > td:last-child {
+      padding-left: 0;
+  }
+  
