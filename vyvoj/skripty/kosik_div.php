@@ -90,6 +90,9 @@ color: red;
 	
   width: 75%;
   }
+  .modal-side > div:first-child{
+    overflow: hidden;
+  }
   .modal-buttons{
 	width: 100%;
   }

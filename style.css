@@ -1451,7 +1451,7 @@ margin-bottom: 0;
         transform: translateX(-50%);
         left: 50%;
         margin: 0 !important;
-        top: 30%;
+        top: 25%;
       width: 100% !important;
     }
       #TB_window  .obal{
@@ -1936,3 +1936,4 @@ img[src="/img/req2.png"]{
   .kos_celkem_in.--krok3 #js_cena > span {
     padding-left: 10px;
   }
+
