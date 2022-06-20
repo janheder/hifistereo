@@ -1886,6 +1886,9 @@ img[src="/img/req2.png"]{
         padding-bottom: 20px;
         margin-bottom: 10px;
     }
+    .detail_box_pravy_obal_in h1{
+        font-size: 28px;
+    }
 }
 
 .cart-buttons .sub_dk3, .cart-buttons .sub_dk2{
