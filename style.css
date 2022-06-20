@@ -2003,4 +2003,19 @@ img[src="/img/req2.png"]{
         grid-template-columns: 1fr;
         gap: 0px;
       }
+
+      .vyhl_okno form p {
+        display: flex;
+        width: 100%;
+    }
+    .input_vyhledavani {
+        margin: 0;
+        width: 100%;
+    }
+    .prihlas_okno a {
+        padding: 10px 0;
+    }
+    .top_prihlas_okno_jmeno{
+        padding-bottom: 10px;
+    }
     }
