@@ -1494,7 +1494,7 @@ margin-bottom: 0;
         .aktuality_foot_archiv{display: none;}
 
         .product-cta p img{
-            left: 40px;
+            left: 40px !important;
         }
       }
 
@@ -1932,3 +1932,7 @@ img[src="/img/req2.png"]{
       padding-left: 0;
   }
   
+
+  .kos_celkem_in.--krok3 #js_cena > span {
+    padding-left: 10px;
+  }

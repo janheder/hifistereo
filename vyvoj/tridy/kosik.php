@@ -741,8 +741,8 @@ private $slevova_skupina_zakaznika;
 	
 	<div class="kos_celkem_title">Celkem:</div>
 	
-	<span style="font-size: 34px; color: #1f1f1f; font-weight: bold;" id="js_cena">'.($cena_final + $row_platba->cena + $row_doprava->cena).'</span> 
-    <span style="font-size: 34px; color: #1f1f1f;  font-weight: bold;">'.__MENA__.'</span><br />
+	<span style="font-size: 34px; color: #1f1f1f; font-weight: bold;" id="js_cena">'.($cena_final + $row_platba->cena + $row_doprava->cena).'<span>'.__MENA__.'</span></span> 
+
     <span style="font-size: 14px; color: #777777;">včetně DPH</span></div>';
     
    
