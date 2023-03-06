@@ -1,2 +1,0 @@
-User-agent: *
-Sitemap: http://www.hifistereo.cz/sitemap.xml
